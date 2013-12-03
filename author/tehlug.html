@@ -1,0 +1,590 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="fa" dir="rtl"> <![endif]-->
+<html class="no-js" lang="fa">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Python The Right Way - Articles by TehLug</title>
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+         More info: h5bp.com/b/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="humans.txt">
+
+    <link rel="shortcut icon" href="http://k1-hedayati.github.io/python-the-right-way/theme/favicon.png" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/normalize.css">
+    <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/foundation.css">
+
+    <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/vendor/custom.modernizr.js"></script>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='fixed'>
+        <nav class="top-bar" data-topbar>
+
+          <ul class="title-area">
+            <li class="name"><h1><a href="#">پایتون</a></h1></li>
+
+            <!-- Mobile Menu Toggle -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+
+          <!-- Top Bar Section -->
+
+          <section class="top-bar-section">
+
+            <!-- Top Bar Right Nav Elements -->
+            <ul class="right">
+              <!-- Divider -->
+              <li class="divider"></li>
+              <!-- Dropdown -->
+              <li class="has-dropdown">
+                <a href="#01-01-01-01-intro">آشنایی</a>
+                <ul class="dropdown">
+                  <li><a href='#01-02-01-01-who-uses-python'>در کجا استفاده شده؟</a></li>
+                  <li><a href='#02-01-01-01-why-python'>اصلا چرا پایتون؟</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href="#02-01-01-01-why-python">اصلا چرا پایتون؟</a>
+                <ul class="dropdown">
+                  <li><a href='#02-02-01-01-prons-and-cons-of-python'>مزایا و معیاب فنی</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="">
+                <a href="#03-01-01-01-python-2-or-3">پایتون ۲ یا ۳؟</a>
+              </li>
+              <li class="divider"></li>
+              <li class="">
+                <a href="#04-01-01-01-which-ide">کدام IDE؟</a>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href="#05-01-01-01-where-to-start">از کجا شروع کنیم؟</a>
+                <ul class="dropdown">
+                  <li><a href='#05-02-01-01-books-to-read'>چه کتابهایی برای پایتون بخوانیم؟</a></li>
+                  <li><a href='#05-03-01-01-python-schools'>آموزشگاه های پایتون</a></li>
+                  <li><a href='#05-04-01-01-online-education'>آموزش آنلاین</a></li>
+                  <ul class="dropdown">
+                    <li><a href='#05-04-02-01-codecademy'>Codecademy</a></li>
+                    <li><a href='#05-04-03-01-learnstreet'>LearnStreet</a></li>
+                    <li><a href='#05-04-04-01-codingbat'>CodingBat</a></li>
+                    <li><a href='#05-04-05-01-online-python-tutor'>Online Python Tutor</a></li>
+                    <li><a href='#05-04-06-01-python-monk'>PythonMonk</a></li>
+                    <li><a href='#05-04-07-01-maktabkhooneh'>Maktabkhooneh</a></li>
+                    <li><a href='#05-04-08-01-runestone'>Runestone</a></li>
+                    <li><a href='#05-04-09-01-web-amoz'>وب‌آموز</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class=""><a href='#06-01-01-01-coding-standards'>استاندارد کدنویسی در پایتون</a></li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href='#07-01-01-01-python-and'>پایتون و ...</a>
+                <ul class="dropdown">
+                  <li class="has-dropdown">
+                    <a href='#07-02-01-01-web'>وب</a>
+                    <ul class="dropdown">
+                      <li><a href='#07-02-02-01-what-is-web'>وب چیست؟</a></li>
+                      <li><a href='#07-02-03-01-framework'>فریم‌ورک</a></li>
+                    </ul>
+                  </li>
+                  <li><a href='#07-03-01-01-desktop'>دسکتاپ</a></li>
+                  <li><a href='#07-04-01-01-embedded'>امبدد(Embedded)</a></li>
+                  <li><a href='#07-05-01-01-network'>شبکه</a></li>
+                  <li class="has-dropdown">
+                    <a href='#07-06-01-01-database'>بانک‌های اطلاعاتی</a>
+                    <ul class='dropdown'>
+                      <li><a href='#07-06-02-01-orm'>ORM</a></li>
+                    </ul>
+                  </li>
+                  <li><a href='#07-07-01-01-data-mining'>داده کاوی</a></li>
+                  <li><a href='#07-08-01-01-calculation'>محاسباتی</a></li>
+                  <li><a href='#07-09-01-01-security'>امنیت</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class='row'>
+            <article id='05-04-07-01-maktabkhooneh'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-07-01-maktabkhooneh.html"><small>Maktabkhooneh</small></a></h3>
+                <div><p>هدف <a class="reference external" href="http://maktabkhooneh.org/course?course=python154">مکتب خونه</a> در دسترس قرار دادن آموزش با کیفیت بالا برای همه ی فارسی زبانان است. ما اعتقاد داریم که هیچ کس نباید به خاطر هیچ چیز از لذت یاد گرفتن محروم شود. نباید سن و سال یا مکان و موقعیت و امکانات مالی افرادی را از یاد گرفتن و موفقیت باز دارد.</p>
+<p>مکتب خونه بنا دارد تا بستری نرم افزاری مناسبی بسازد که در آن هر کس بتواند یاد بدهد و یاد بگیرد. اگر آموزگار هستید بتوانید کلاس خود را ایجاد کنید و به هزاران دانش آموز از سرتاسر جهان یاد بدهید و اگر دانش آموز هستید در کلاس های دلخواهتان شرکت کنید و درباره ی هزاران موضوع یاد بگیرید.</p>
+</div>
+            </article>
+            <article id='05-04-08-01-runestone'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-08-01-runestone.html"><small>Runestone</small></a></h3>
+                <div><p class="text-left"><a class="reference external" href="http://interactivepython.org/">Runestone</a> Interactive is the home for several projects that provide interactive textbooks for computer science. We currently have two books in use for our Introductory Computer Science classes. You can link to them from the library on the right.</p>
+<p class="text-left">In addition to the books we are also have a set of tools for creating interactive eBooks. The tools as well as the book are open source and available for you to use. If you do use the tools to create a book let us know and we'll add a link.</p>
+</div>
+            </article>
+            <article id='05-04-09-01-web-amoz'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-09-01-web-amoz.html"><small>وب‌آموز</small></a></h3>
+                <div><p>کلاس های مجازی با حضور استاد و دانشجویان به صورت کاملا آنلاین در این سایت عرضه می‌شود که در دروه مقدماتی به مفاهیم پایه برنامه نویسی و مفاهیم شبکه و برنامه نویسی شبکه در پایتون پرداخته می‌شود و در دوره پیشرفته بیشتر مباحث امنیت و تکنیک های آن بررسی می‌شوند.</p>
+<p><a class="reference external" href="http://www.webamooz.ir/home/courses/python-for-ethical-hackers-1/">دوره مقدماتی</a></p>
+<p><a class="reference external" href="http://www.webamooz.ir/home/courses/python-for-ethical-hackers-2/">دوره پیشرفته</a></p>
+<p>اسلاید های دوره در <a class="reference external" href="http://www.slideshare.net/itmard">SildeShare قابل مشاهده</a> هستند که امکان <a class="reference external" href="http://kamalifard.ir/pysec101/">دانلود</a> آنها نیز وجود دارد.</p>
+</div>
+            </article>
+            <article id='06-01-01-01-coding-standards'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/06-01-01-01-coding-standards.html">استاندارد کد نویسی در پایتون</a></h1>
+                <div><p>استانداردها و رسوم کدنویسی، گایدلاین ها (راهنما و دستورالعمل) برای زبان های برنامه نویسی هستند که شیوه های خاصی برای کدنویسی را توصیه می کنند. این گایدلاین ها توصیه هایی برای کامنت گذاری، فاصله گذاری، تعریف و نام گذاری متغیرها (variable)، چگونگی فضاهای خالی و … دارند.</p>
+<p>بسیار توصیه می شود که برنامه نویسان نرم افزارها حتما از این استانداردها استفاده کنند تا کدهایشان به آسانی توسط سایرین خوانده شود.</p>
+<p><strong>چرا استاندارد نویسی اهمیت دارد؟</strong></p>
+<p>گرچه استاندارد نویسی در ابتدا مشکل است و بیهوده به نظر می رسد، اما زمانی که نرم افزارتان بزرگ شود و حجم آن به چند هزار خط در چند صد فایل برسد، فواید آن مشخص می شود. بعضی از این فواید عبارتند از:</p>
+<ul class="simple">
+<li>برنامه نویسان به راحتی می توانند روی کدهایی که توسط دیگران نوشته شده کار کنند. زیرا کدها به روشی نوشته شده اند که هر یک از برنامه نویسان با آن آشنا است.</li>
+<li>اگر شخص جدیدی وارد تیم پروژه شود، به راحتی می تواند با کدها کار کند (به شرطی که با کدنویسی استاندارد آشنایی داشته باشد.)</li>
+<li>رعایت استانداردها گاهی از ایجاد اشتباه در کدنویسی نیز جلوگیری می کند.</li>
+</ul>
+<p class="text-left"><a class="reference external" href="https://pypi.python.org/pypi/pep8">pep8 - Python style guide checker</a></p>
+<p>در لینک های زیر با استانداردها و توصیه های کدنویسی در پایتون آشنا می شوید:</p>
+<p class="text-left"><a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">Style Guide for Python Code</a></p>
+<p class="text-left"><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style.html">Code Style</a></p>
+<p class="text-left"><a class="reference external" href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html">Code Like a Pythonista: Idiomatic Python</a></p>
+<p class="text-left"><a class="reference external" href="http://eikke.com/how-not-to-write-python-code/">How not to write Python code</a></p>
+<p class="text-left"><a class="reference external" href="https://www.memonic.com/user/pneff/folder/python/id/1bufp">Python Idioms and Efficiency</a></p>
+<p class="text-left"><a class="reference external" href="http://docs.ckan.org/en/latest/python-coding-standards.html">Python Coding Standards</a></p>
+<p class="text-left"><a class="reference external" href="http://www.python.org/dev/peps/pep-0257/">Docstring Conventions</a></p>
+</div>
+            </article>
+            <article id='07-01-01-01-python-and'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/07-01-01-01-python-and.html">پایتون و ...</a></h1>
+                <div></div>
+            </article>
+            <article id='07-02-01-01-web'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-02-01-01-web.html"><small>وب</small></a></h2>
+                <div><p>خوشبختانه امروزه برنامه نویسی برای وب با پایتون همانند سالهای قبل نیست</p>
+<p>گرچه در ابتدا پایتون به عنوان یک زبان همه منظوره (از جمله با هدف برنامه نویسی وب) مطرح شد ولی در ابتدا امکانات اولیه ای که برای برنامه نویسی وب در آن قرار داده شده بود کم و ناقص بودند به همین علت فریم ورک هایی به وجود آمدند که کار برنامه نویسی وب با پایتون را راحت و دلپذیر کنند</p>
+<p>بعد ها در سال 2007 با معرفی pep 333 رسما استانداردی برای برنامه نویسی وب با ایتون ایجاد شد ولی با توجه به پشرفت فریم ورک های پایتونی تا قبل از این تاریخ و نیز اینکه این استاندار با هدف هر چه بهتر کردن استفاده از فریم ورک ها طراحی شد برنامه نویسان حتی برای ساده ترین امور نیز از فریم ورکی که متناسب با کار ایسان است استفاده می کنند</p>
+<p>با این توضیح افرادی که از پی اچ پی به پایتون مهاجرت کرده اند ممکن است تعجب کنند چرا که این افراد در بسیاری از موارد عادت دارد همه سایت را از ابتدا و بدون استفاده از فریم ورک ها برنامه نویسی کنند در حالی که در پایتون تقریبا هیچ کس را پیدا نمی کنند که سایتی را بدون استفاده از فریم ورک ها برنامه نویسی کند</p>
+</div>
+            </article>
+            <article id='07-02-02-01-what-is-web'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/07-02-02-01-what-is-web.html"><small>وب چیست؟</small></a></h3>
+                <div><p>خالی...</p>
+</div>
+            </article>
+            <article id='07-02-03-01-framework'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/07-02-03-01-framework.html"><small>وریم‌ورک</small></a></h3>
+                <div><p>خالی...</p>
+</div>
+            </article>
+            <article id='07-03-01-01-desktop'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-03-01-01-desktop.html"><small>دسکتاپ</small></a></h2>
+                <div><p>در صورتیکه از محیط دسکتاپ سیستم عامل لینوکس استفاده می کنید بعید به نظر می رسد که از نرم افزار هایی که با ایتون نوشته شده است استفاده نکرده باشید</p>
+<p>پایتون جزپی جدا نشدنی از لینوکس است
+ولی مشاهده می شود که بسیاری از نرم افزار های مشهور که در ویندوز نیز قابل استفاده است با پایتون نوشته شده است</p>
+<p>برای ایجاد فرم های و پنجره ها در ویندوز و لینوکس بایستی از كتابخانه های گرافیکی استفاده شود.
+ابزارهاي متعددي براي اين منظور در دسترس هستند ولي هيچكدام كامل نيستند و البته متفاوت با هم.
+در ادامه به معرفي چند ابزار معروف و پركاربرد در اين زمينه مي پردازيم.</p>
+<p>Tkinter</p>
+<p>ابزاي قديمي و معروف در پايتون كه تقريبا همزمان با بوجود آمدن اين زبان ارائه شد. ابزاري چند سكويي،پايدار و قابل اعتماد كه به سادگي قابل يادگيري است.
+البته اين ابزار داراي كمبودهايي در widget هاي خود ميباشد.</p>
+</div>
+            </article>
+            <article id='07-04-01-01-embedded'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-04-01-01-embedded.html"><small>امبدد(Embedded)</small></a></h2>
+                <div><p>به طور کلی دو روش برای استفاده از پایتون به صورت embedded وجود دارد:</p>
+<ul class="simple">
+<li>استفاده از زبان پایتون در برنامه کاربردی و توسعه و نوشتن برنامه های مورد نیاز آن برنامه به کمک پایتون و یا استفاده از پایتون برای پشتیبانی از آن برنامه و نوشتن کدهای با استفاده از این زبان</li>
+</ul>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/2/extending/embedding.html">Embedding Python in Another Application</a></p>
+<ul class="simple">
+<li>دستگاهایی که به اندازه کافی حافظه داشته باشند و دارای سرعت بالا برای اجرای لینوکس و انواع خاص آن می توانند از پایتون و یا CPython استفاده کنند. که در بعضی سخت افزارها که از پردازنده  ARM استفاده می کنند هم استفاده شده است.</li>
+</ul>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/EmbeddedPython">Embedded Python</a></p>
+<p class="text-left"><a class="reference external" href="http://www.vanille-media.de/site/index.php/projects/python-for-arm-linux/">PYTHON FOR ARM-LINUX</a></p>
+<p class="text-left"><a class="reference external" href="http://www.nongnu.org/pyet/">Python Embedded Tools</a></p>
+<p class="text-left"><a class="reference external" href="http://embeddedpython.org/index.php/The_Owl_Embedded_Python_System">The Owl Embedded Python System</a></p>
+<p class="text-left"><a class="reference external" href="http://www.eluaproject.net/doc/v0.8/en_building_unix.html">Building eLua in Linux</a></p>
+<p class="text-left"><a class="reference external" href="http://code.google.com/p/python-on-a-chip/">Python-on-a-Chip</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PyMite">PyMite</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.openmoko.org/wiki/Python">Python - Openmoko</a></p>
+<p class="text-left"><a class="reference external" href="http://www.roundsolutions.com/shop/en/OEM-GSM-GPS-Solutions/AarLogic">AarLogic - Round Solutions</a></p>
+<p class="text-left"><a class="reference external" href="http://gnublin.embedded-projects.net/">embedded Linux Gnublin</a></p>
+<p class="text-left"><a class="reference external" href="http://www.telit.com/en/products/python/why-python.php">GSM/GPRS modem modules</a></p>
+<p class="text-left"><a class="reference external" href="http://mail.python.org/pipermail/python-list/1999-May/006956.html">How to port Python to VxWorks</a></p>
+<p class="text-left"><a class="reference external" href="http://en.wikipedia.org/wiki/VxWorks">VxWorks</a></p>
+<p class="text-left"><a class="reference external" href="http://www.linuxforu.com/2012/01/building-image-processing-embedded-systems-using-python-part-1/">Building Image Processing Embedded Systems using Python, Part 1</a></p>
+</div>
+            </article>
+            <article id='07-05-01-01-network'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-05-01-01-network.html"><small>شبکه</small></a></h2>
+                <div><p>پایتون دو سطح برای دسترسی به شبکه فراهم می کند، در سطح پایین شما می توانید به سوکت ها دسترسی داشته باشید که به شما اجازه میدهد سرویس دهنده و سرویس گیرنده های تحت شبکه را پیاده سازی کنید، و در سطح بالا پایتون کتابخانه های دسترسی به پروتکل های لایه application مثل HTTP و FTP و … را فراهم می کند.
+پایتون دسترسی ساده به شبکه برای شما فراهم می‌کنند و برای برنامه نویسی سوکت ها به صورت RAW نیز امکانات فوق العاده ای در اختیار کاربر قرار می‌دهد.
+پایتون کتابخانه های فوق العاده ای در زمینه شبکه و امنیت دارد و امکان برنامه نویسی شبکه به صورت Non-blocking را به راحتی فراهم می‌کند.
+برای مثال کتاب‌خانه های شبکه پایتون :</p>
+<p><a class="reference external" href="http://twistedmatrix.com/">Twisted</a></p>
+<p><a class="reference external" href="http://eventlet.net/">Eventlet</a></p>
+<p><a class="reference external" href="http://docs.python-requests.org/">Requests</a></p>
+<p><a class="reference external" href="http://www.secdev.org/projects/scapy/">Scapy</a></p>
+<p>و اشاره کرد.</p>
+<p>پایتون همچنین ماژول های مختلفی برای شبکه دارد که به راحتی می‌توان با استفاده از آن ها بسیاری از کارها را با چند خط کد ساده انجام داد به طول مثال :</p>
+<p>برای ایجاد یک سرور TCP یا UDP می‌توان از ماژول SocketServer استفاده کرد.</p>
+<p>برای ایجاد یک وب سرور ساده می‌توان از ماژول SimpleHTTPServer استفاده کرد.</p>
+<p>برای آشنایی بیشتر با نحوه برنامه نویسی شبکه در پایتون مطالب زیر شروع خوبی برای اینکار هستند:</p>
+<p class="text-left"><a class="reference external" href="http://www.binarytides.com/python-socket-programming-tutorial/">Python socket – network programming tutorial</a></p>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/2/howto/sockets.html">Socket Programming HOWTO</a></p>
+<p class="text-left"><a class="reference external" href="http://www.tutorialspoint.com/python/python_networking.htm">Python Network Programming</a></p>
+<p>در ضمن کتاب <a class="reference external" href="http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037/">Foundations of Python Network Programming</a> به صورت مفصل تر به این موضوع پرداخته است، در این کتاب به پکیج‌های مفیدی معرفی شده که بعضی از آنها عبارتند از:</p>
+<p>برای کار با نقشه‌های گوگل می توانید از بسته <a class="reference external" href="https://pypi.python.org/pypi/googlemaps">googlemaps</a> استفاده کنید.</p>
+<p>برای صحبت با پروتکل HTTP کتابخانه <a class="reference external" href="http://docs.python.org/2/library/httplib.html">httplib</a> استفاده کنید.</p>
+<p>کتابخانه <a class="reference external" href="http://docs.python.org/2/library/socket.html">سوکت</a> برای کار با شبکه در سطح پایین استفاده می شود.</p>
+<p>همچنین در پایتون با بسته <a class="reference external" href="https://pypi.python.org/pypi/pydns">pydns</a> می توانید با سرورهای DNS ارتباط برقرار کنید.</p>
+<p>پایتون قابلیت کد کردن داده ها با <a class="reference external" href="http://docs.python.org/2/library/json.html">JSON</a> و فشرده کردن آنها با <a class="reference external" href="http://docs.python.org/2/library/zlib.html">zlib</a> و <a class="reference external" href="http://docs.python.org/2/library/gzip.html">gzip</a> را دارد.</p>
+<p>رمزنگاری TLS و SSL با کتابخانه <a class="reference external" href="http://docs.python.org/2/library/ssl.html">ssl</a> انجام می شود.</p>
+<p>با ماژول <a class="reference external" href="http://docs.python.org/2/library/logging.html">logging</a> امکان ثبت رخدادهای برنامه وجود دارد.</p>
+<p>برای برنامه نویسی behaviour-driven در پاتون بسته <a class="reference external" href="https://pypi.python.org/pypi/lancelot">lancelot</a> این امکان را فراهم می کند.</p>
+<p><a class="reference external" href="https://twistedmatrix.com/trac/">Twisted</a> یک فریم‌ورک event-driven برای کار با شبکه است که از پروتکل های مختلف پشتیبانی می کند، برای اطاعات بیشتر در مورد Twisted به صفحه <a class="reference external" href="https://en.wikipedia.org/wiki/Twisted_(software)">ویکی‌پیدا</a> ‌ پروژه مراجعه کنید.</p>
+<p>فریم‌ورک <a class="reference external" href="http://docs.python.org/2/library/socketserver.html#module-SocketServer">SocketServer</a> برنامه نویسی سرور‌های شبکه را آسان می کند.</p>
+<p>پایتون با بسته <a class="reference external" href="https://pypi.python.org/pypi/python-memcached/">python-memcached</a> امکان اتصال به سرویس‌دهنده memcached را فراهم می کند.</p>
+<p>برای درهم سازی و hash کردن داده‌ها می توانید از <a class="reference external" href="http://docs.python.org/2/library/hashlib.htmld/">hashlib</a> استفاده کنید.</p>
+<p><a class="reference external" href="https://pypi.python.org/pypi/pyzmq/2.2.0">pyzmq</a> امکان اتصال پایتون به ØMQ را می دهد.</p>
+<p>کتاب‌خانه های <a class="reference external" href="http://docs.python.org/2/library/urllib.html">urllib</a>, <a class="reference external" href="http://docs.python.org/2/library/urllib2.html">urllib2</a> و <a class="reference external" href="http://docs.python.org/2/library/urlparse.html">urlparse</a> امکان اتصال به پروتکل HTTP و کار با url ها را فراهم می کنند، بسته <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> نیز این قابلیت را در سطح بالاتر و با سهولت بیشتر فراهم می کند.</p>
+<p>در پایتون امکان ایجاد و اجرای اسکریپت‌های cgi در سرور HTTP با ماژول <a class="reference external" href="http://docs.python.org/2/library/cgi.html">cgi</a> وجود دارد.</p>
+<p><a class="reference external" href="http://docs.python.org/2/library/cookielib.html">cookielib</a> نیز برای handle کوکی‌ کلاینت‌های HTTP استفاده می شود.</p>
+<p>برای شبیه‌سازی قابلیت‌های مرورگرها و مرور وب با پایتون می توان از بسته <a class="reference external" href="https://pypi.python.org/pypi/mechanize/">mechanize</a> استفاده کرد.</p>
+</div>
+            </article>
+            <article id='07-06-01-01-database'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-06-01-01-database.html"><small>بانک‌های اطلاعاتی</small></a></h2>
+                <div><p>امروزه اینکه برنامه ای را بنویسید و در آن نیاز به کار با بانک های اطلاعاتی یدا نکنید تعجب آور است</p>
+<p>به طبع هر زبان برنامه نویسی امکاناتی را برای اتصال و استفاده از از بانک های اطلاعاتی فراهم می آورد بعضی از این امکانات به صورت داخلی و بعضی با استفاده از کتابخانه های خارجی مورد استفاده قرار می گیرند</p>
+<p>بقیه بعدا که حوصله داشتم</p>
+</div>
+            </article>
+            <article id='07-06-02-01-orm'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/07-06-02-01-orm.html"><small>ORM</small></a></h3>
+                <div><p>خالی...</p>
+</div>
+            </article>
+            <article id='07-07-01-01-data-mining'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-07-01-01-data-mining.html"><small>داده کاوی</small></a></h2>
+                <div><p>داده کاوی، پایگاه‌ها و مجموعه‌های حجیم داده‌ها را در پی کشف واستخراج دانش، مورد تحلیل و کند و کاوهای ماشینی (و نیمه‌ماشینی) قرار می‌دهد. این گونه مطالعات و کاوش‌ها را به واقع می‌توان همان امتداد و استمرار دانش کهن و همه جا گیر آمار دانست. تفاوت عمده در مقیاس، وسعت و گوناگونی زمینه‌ها و کاربردها، و نیز ابعاد و اندازه‌های داده‌های امروزین است که شیوه‌های ماشینی مربوط به یادگیری، مدل‌سازی، و آموزش را طلب می‌نماید.</p>
+<p>اصطلاح Data Mining همان طور که از ترجمه آن به معنی داده کاوی مشخص می‌شود به مفهوم استخراج اطلاعات نهان و یا الگوها وروابط مشخص در حجم زیادی از داده‌ها در یک یا چند بانک اطلاعاتی بزرگ است.</p>
+<p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/Data_mining">Data mining</a></p>
+<p class="text-left"><a class="reference external" href="http://www.kaggle.com/wiki/Tutorials">Tutorials | Kaggle</a></p>
+<p><a class="reference external" href="https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D8%AF%D9%87%E2%80%8C%DA%A9%D8%A7%D9%88%DB%8C">داده‌کاوی</a></p>
+<p><a class="reference external" href="http://www.alborzinsurance.ir/ShowArticles.aspx?id=71b5c2fc-07a3-40e5-9517-1195aedd6770">داده كاوي چيست ؟</a></p>
+</div>
+            </article>
+            <article id='07-08-01-01-calculation'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-08-01-01-calculation.html"><small>محاسباتی</small></a></h2>
+                <div><p>اغلب افراد پایتون را زبان تخصصی مورد استفاده مهندسین کامپیوتر می دانند ولی استفاده این زبان در کاربردهای دانشگاهی شگفت آور است</p>
+<p>اگر در دانشگاه های شهر تهران به سراغ دانشجویان رشته ریاضی یا آمار بروید بعید به نظر می رسد که مفسر زبان پایتون به همراه numpy رو بر روی لپ تاپ  آنهاپیدا نگنید</p>
+<p>یا اگر به سراغ دانشجویان سنجش از دور یا جغرافی بروید احتمالا همه آن همرا ه با نصب arcGIS نسخه ای از پایتون را نیر بر روی رایانه مورد استفاده خود نصب کرده اند</p>
+<p>این زبان به علت کارایی بالا در کنار سهولت یاد گیری مورد توجه خاص افرادی است که رشته تخصصی آنها چیزی به غیر از زمینه های مرتبط با کامپیوتر است از علوم ایه و و شاخه های مرتبط با ریاضیات مانند راضی و آمار و فیزیک تا علوم تجربی مانند جغرافی</p>
+</div>
+            </article>
+            <article id='07-09-01-01-security'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/07-09-01-01-security.html"><small>امنیت</small></a></h2>
+                <div><p>در زمینه امنیت از زبان پایتون استفاده های بسیاری می‌شود.
+یکی از دلایلی که به زبان پایتون اهمیت زیادی داده می‌شود تعداد کد های کمی هست که برای رسیدن به مقصود لازم است برنامه نویس بنویسد با کمک این قابلیت می‌توان از جزئیات بسیار پیاده سازی گذر کنیم و به نحوه کار برنامه بیشتر بپردازیم این در بحث Proof of concept  و Rapid prototyping بسیار مهم است زیرا اجازه می‌دهد که ایده هایی که برای حمله و نفوذ وجود دارد را در سریع ترین زمان مورد بررسی قرار دهیم که ممکن است با زبانی مثل C نیاز به یک روز کار برای تست عملی بودن یک ایده داشته باشیم.</p>
+<p>در زمینه امنیت پایتون کتاب‌خانه های قدرتمندی دارد و در تمامی زمینه ها امنیت ابزارهای قدرتمندی با پایتون ساخته شدند بسیاری از Exploit هایی که نوشته می‌شوند هم این روزها با این زبان توسعه پیدا می‌کنند.</p>
+<p>در زمینه شبکه و امنیت از کتاب‌خانه ها و ابزارهای زیر استفاده می‌شود</p>
+<p>Scapy برای Sniff و فرستادن و ایجاد بسته ها Injection استفاده می‌شود که از آن می‌توان به صورت Interactive Shell و یا به صورت module استفاده کرد.</p>
+<p>pypcap و Pcapy و pylibpcap برای ارتباط و استفاده از libpcap</p>
+<p>Pytbull فریم ورک برای تست IPS و IDS ها استفاده می‌شود</p>
+<p>مهندسی معکوس و دیباگ کردن
+Fuzzing
+کتاب خانه های وب
+Forensics
+آنالیز بد افزار ها</p>
+</div>
+            </article>
+            <article id='01-01-01-01-intro'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/01-01-01-01-intro.html">مقدمه</a></h1>
+                <div><p>پایتون زبان خوبی است! :دی</p>
+</div>
+            </article>
+            <article id='01-02-01-01-who-uses-python'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/01-02-01-01-who-uses-python.html"><small>معرفی نرم افزار ها ، سایت ها ، شرکت ها ، جاهایی که از پایتون استفاده شده</small></a></h2>
+                <div><p>بر اساس اطلاعات به دست آمده از <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)#Use">ویکیپیدا</a> و <a class="reference external" href="http://www.python.org/about/quotes">سایت اصلی پایتون</a> از این زبان در شرکت‌های زیر استفاده شده:</p>
+<ul class="simple">
+<li>Google</li>
+<li>Yahoo</li>
+<li>CERN</li>
+<li>NASA</li>
+</ul>
+</div>
+            </article>
+            <article id='01-03-01-01-where-you-can-use-python'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/01-03-01-01-where-you-can-use-python.html"><small>پایتون کجا قابل استفاده است</small></a></h2>
+                <div><p>پایتون زبانی انعطاف‌پذیر است که به علت مفسری بودن آن برنامه‌های نوشته شده به این زبان براحتی در بسیاری از پلتفرم‌ها قابل استفاده است.
+لیستی از پلتفرم‌هایی که پایتون در آنها قابل استفاده است:</p>
+<ul class="simple">
+<li>Linux</li>
+<li>Windows</li>
+<li>Android</li>
+<li>Mac OS</li>
+<li>iOS</li>
+</ul>
+<p>همچنین با این زبان در محیط‌ها زیر کاربرد دارد:</p>
+<ul class="simple">
+<li>Web</li>
+<li>Desktop</li>
+<li>Mobile</li>
+<li>Scientific computing</li>
+<li>3D animation scripting</li>
+<li>ArcGIS</li>
+<li>Artificial intelligence</li>
+<li>Information security</li>
+<li>Raspberry Pi</li>
+</ul>
+<p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_Python_software">List of Python software</a></p>
+</div>
+            </article>
+            <article id='02-01-01-01-why-python'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/02-01-01-01-why-python.html">اصلا چرا پایتون؟</a></h1>
+                <div><p>به عقیده یکی از نویسندگان کتاب پایتون برنامه نویس کسی است که از برنامه نویسی لذت می برد و با استفاده از هر ابزاری این کار را انجام می دهد. پس کاری را انجام دهید که از آن لذت می برید.</p>
+<p>زبان پایتون یک زبان آزاد و متن باز استبد. پس به راحتی برای شما در دسترس بوده و می توانید بدون محدودیت از آن استفاده کنید.</p>
+<p>اگر می خواهید یک جستجوی ساده انجام دهید و یا با تعداد زیادی فایل مثل عکس های یادگاری کار کنید نیاز به یک دیتابیس بسیار ساده و رابط کاربری آسان دارید می توانید از این زبان به عنوان اسکریپت نویسی استفاده کنید. این امکان حتی به شما در انجام کارهای SysAdmin هم می تواند بسیار مفید واقع شود.</p>
+<p>اگر یک برنامه نویس حرفه ای  هستید و از زبانها و ماژولهای مختلفی برای انجام کار استفاده می کنید. می توانید از این زبان که قابلیت اجرا در تعداد وسیعی از سیستمها را دارد استفاده کنید و حتی می توانید از پایتون به صورت یک زبان بصورت embedded در برنامه خود استفاده کنید و جهت توسعه آنرا بکار ببندید.</p>
+<p>پایتون زبانی است که تعداد زیادی ساختار را پشتیبانی کرده و می توانید به راحتی از ابزارهای مختلف آن سود ببرید. حتی در صورتی که هنوز از C استفاده می کنید و یا می خواهید قدرت آن را هم در دستان خود داشته باشید می توانید قسمتهایی از برنامه را به کمک زبان C بنویسید و از آنها در برنامه خود استفاده کنید. بعضی از ساختارهای زبان پایتون باعث شده است که بعضی آن را بهتر از Perl بدانند و در حل مشکلات بزرگتر از آن استفاده کنند.</p>
+<p>پایتون امکان تقسیم بندی برنامه به ماژول های مختلف را برای شما به وجود می آورد و می توانید از این ماژول ها مثل کار با فایلها ، ورودی و خروجی ها، سوکت ها، و رابطهای متفاوت و حتی گرافیکی  در برنامه های دیگر خود به راحتی استفاده کنید.</p>
+<p>پایتون یک زبان تفسیری است این موضوع این امکان را به شما می دهد تا برنامه خود را در سیستمهای دیگر تنها با وجود یک مفسر پایتون اجرا کنید و این مورد قبلیت اجرای برنامه شما در طیف وسیعی از سیستمها فراهم می کند. در صورتی که در بسیاری از زبانها مجبورید نتنها به صورت خاص برنامه نویسی کنید بلکه آن برنامه را به صورت مجزا بر روی سیستم جدید باید کامپایل کنید.</p>
+<p>readability یا خوانا بودن. نوع مفسری که پایتون دارد برنامه نویس را مجبور می کند که بصورتی کد نویسی کند که در پایان خواندن برنامه را بسیار آسان می کند. در صورتی که در خیلی از زبانهای دیگر شما به راحتی می توانید چندید خط را در یک خط ادغام کرده و یا همه خطهای برنامه را در یک ستون بنویسید! که این امر خواندن برنامه را بسیار سخت می کند.</p>
+<p><a class="reference external" href="http://www.educator.ir/post-528.jsp">چرا پایتون؟</a></p>
+<p class="text-left"><a class="reference external" href="http://www.python.org/about/success/esr/">Python Success Stories</a></p>
+<p class="text-left"><a class="reference external" href="http://www.slideshare.net/arnav/python-presentation">Why Python - Slideshare</a></p>
+<p class="text-left"><a class="reference external" href="http://pythoncard.sourceforge.net/what_is_python.html">What is Python and Why Python</a></p>
+<p class="text-left"><a class="reference external" href="http://blog.meetthegimp.org/why-python/">Why Python? | Meet the GIMP!</a></p>
+<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/5427/why-such-popularity-with-python">Why such popularity with Python?</a></p>
+<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/27207/why-was-pythons-popularity-so-sudden?rq=1">Why was Python's popularity so sudden?</a></p>
+<p class="text-left"><a class="reference external" href="http://www.codercaste.com/2009/10/20/5-reasons-why-you-should-learn-python-programming/">5 Reasons Why You Should Learn Python Programming</a></p>
+<p class="text-left"><a class="reference external" href="http://www.programmingforbiologists.org/why-python">Why Python? | Programming For Biologists</a></p>
+<p class="text-left"><a class="reference external" href="http://www.activestate.com/blog/2013/03/why-did-it-have-be-python">Python. Why Did it Have to be Python?</a></p>
+</div>
+            </article>
+            <article id='02-02-01-01-prons-and-cons-of-python'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/02-02-01-01-prons-and-cons-of-python.html"><small>مزایا و معیاب فنی</small></a></h2>
+                <div><ul class="simple">
+<li>سادگی و قابل فهم بودن زبان</li>
+<li>خوانایی بالا</li>
+<li>طراحی خوب</li>
+<li>مفسری بودن</li>
+</ul>
+<p class="text-left"><a class="reference external" href="http://www.stat.washington.edu/~hoytak/blog/whypython.html">10 Reasons Python Rocks for Research (And a Few Reasons it Doesn’t)</a></p>
+<p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_programming_languages">Comparison of programming languages</a></p>
+</div>
+            </article>
+            <article id='03-01-01-01-python-2-or-3'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/03-01-01-01-python-2-or-3.html">پایتون ۲ یا ۳</a></h1>
+                <div><p>پایتون ۳ یا ۳۰۰۰ یا py3k نسخه ای از پایتون است که تغییرات زیاد و پایه ای دارد و در کل backward compatibilly ندارد.</p>
+<p>فهرست برخی از تغییرات عمده پایتون ۳ به نقل از ویکیپدیا</p>
+<blockquote>
+تغییر پرینت چون یک تابع غیر قابل انتقال است نه یک توضیح. این باعث می‌شود که تغییر یک ماژول برای استفاده از یک تابع پرینت متفاوت، آسان باشد و بنابراین ایجاد نحو منظم تر می‌شود. در پایتون ۲٫۶ این امکان با تایپ کردن from – future – import print – function فراهم شد.
+اضافه شدن حمایت از یادآوری تابع انتخابی که می‌تواند برای معرفی تایپ خصوصی یا اهداف دیگر استفاده شود.
+یکسان کردن تایپ str/Unicode، به نمایندگی از یک متن، و معرفی یک تایپ byte تغییر ناپذیر؛ با یک تایپ مطابق با bytearray تغییر پذیر، که هر دو آرایه از بایت را ارائه می‌کنند.
+از بین بردن خصوصیات سازگاری معکوس، شامل کلاس‌های به فرم قبل، قسمت کردن اعداد صحیح، استثناءهای رشته‌ای، و گزارش‌های نسبتاً نا آشکار.</blockquote>
+<p>در سایت اصلی پایتون اینگونه نوشته شده است که اگر کارتونو توانستنید با پایتون ۳ انجام دهید. دمتون گرم. ادامه بدهید.</p>
+<p>در کل پایتون ۳ با مشکل پشتیبانی محدود کتابخانه ها مواجه است. هنوز کتابخانه‌هایی هستند که به پایتون ۳ port نشده‌اند.
+از طرفی اکثر سرور ها از سری python 2.x پشتیبانی می کنند.
+در کل پایتون ۳ زبان کاملی است و پشتیبانی خیلی بهتری از unicode دارد.
+از طرفی ابزار هایی مثل 2to3 کمک می کند کد های قدیمیتان را به پایتون ۳ تبدیل کنید (البته نه خیلی راحت)</p>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/release/3.0.1/library/2to3.html#to3-reference">2to3 - Automated Python 2 to 3 code translation</a></p>
+<p><strong>چه کتابخانه هایی هنوز به پایتون ۳ منتقل نشده اند؟</strong></p>
+<p class="text-left"><a class="reference external" href="http://code.google.com/p/gevent/">gevent - Python networking library</a></p>
+<p class="text-left"><a class="reference external" href="http://twistedmatrix.com/trac/wiki">Twisted</a></p>
+<p>البته یک سری از کتابخانه ها به صورت غیر رسمی port شده‌اند:</p>
+<p class="text-left"><a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Some unofficial binaries are available for Python 3 PIL</a></p>
+<p>کتابخانه مهمی که به پایتون ۳ منتقل شده‌اند:</p>
+<p class="text-left"><a class="reference external" href="https://docs.djangoproject.com/en/1.5/faq/install/#can-i-use-django-with-python-3">Django‎</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PySide">PySide</a></p>
+<p class="text-left"><a class="reference external" href="https://live.gnome.org/PyGObject">PyGObject</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PyQt4">PyQt4</a></p>
+<p class="text-left"><a class="reference external" href="http://www.py2exe.org/index.cgi/Tutorial#Step52">py2exe</a></p>
+<p class="text-left"><a class="reference external" href="http://www.cherrypy.org/">CherryPy — A Minimalist Python Web Framework</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pylonsproject.org/">Pylons Project</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pythonware.com/products/pil/">Python Imaging Library (PIL)‎</a></p>
+<p>مقایسه در کد</p>
+<p>قدیمی:</p>
+<pre class="text-left literal-block">
+print &quot;The answer is&quot;, 2*2
+print x,           # Trailing comma suppresses newline
+print              # Prints a newline
+print &gt;&gt;sys.stderr, &quot;fatal error&quot;
+print (x, y)       # prints repr((x, y))
+</pre>
+<p>جدید:</p>
+<pre class="text-left literal-block">
+print(&quot;The answer is&quot;, 2*2)
+print(x, end=&quot; &quot;)  # Appends a space instead of a newline
+print()            # You must call the function!
+print(&quot;fatal error&quot;, file=sys.stderr)
+print((x, y))      # Not the same as print(x, y)!
+</pre>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/3.4/whatsnew/index.html">What’s New in Python</a></p>
+<p>نتیجه گیری</p>
+<p>در کل پایتون ۲ با پایتون ۳ تفاوت خیلی زیادی در کد ندارند و برنامه نویس پایتون ۲ به راحتی می تواند پایتون ۳ را یاد بگیرد. اما منابع آموزشی مربوط به پایتون ۲ بسیار زیاد تر. ابزار بیشتر و ... دارند.
+توصیه آخرم این است که تازه وارد ها با پایتون ۲ کار کنند و فقط از پایتون ۳ استفاده کنند که دقیقا می دانند می خواهند چه استفاده ای از پایتون ۳ بکنند. یعنی تمامی نیاز مندی کارشان را در نظر بگیرند.</p>
+<p>مقالات مرتبط</p>
+<p class="text-left"><a class="reference external" href="http://www.b-list.org/weblog/2008/dec/05/python-3000/">Let's talk about Python 3.0</a></p>
+<p class="text-left"><a class="reference external" href="http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/">Pros and Cons about Python 3</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/Python2orPython3">Python2orPython3</a></p>
+<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/442352/python-2-vs-python-3-and-tutorial">Python 2 vs Python 3 and Tutorial</a></p>
+<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/170921/should-i-learn-python-2-before-3-or-start-directly-from-python-3">Should I learn Python 2 before 3, or start directly from Python 3?</a></p>
+<p class="text-left"><a class="reference external" href="http://py.onepotcooking.com/posts/2011-01-27/differences-between-python-2-x-and-python-3-x/">Differences between Python 2.x and Python 3.x</a></p>
+</div>
+            </article>
+            <article id='04-01-01-01-which-ide'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/04-01-01-01-which-ide.html">کدام IDE؟</a></h1>
+                <div><p>یکی از سوالاتی که همواره در ذهن افراد تازه کار وجود دارد این است که از کدام آی دی ای استفاده کنند و مدت زمان زیادی از وقت خود را برای یافتن یه آی دی ای صرف می کنند
+گرچه وجود یک آی دی ای خوب در برنامه نویسی راحت تر موثر است ولی نباید آنچنان در گیر یافتن یک آی دی ای شد که خود برنامه نویسی را فراموش کرد
+برنامه نویسان همواره باید این نکته را مد نظر داشته باشند که تغییر از یک آی دی ای به یک آی دی ای دیگر چندان سخت نیست و بهتر است با هر آنچه در اختیار دارند برنامه نویسی و و یاد گیری را آغاز کنند و به مرور زمان هر گاه احساس نیاز به یک آی دی ای و ویراستار دیگر پیدا کردند به آن کوچ کنند
+با این حال معمولا توصیه می شود در شروع یادگیری یک زبان برنامه نویسی ازویراشتارهای ساده تر استفاده شود و زمانی که تسلط کافی در برنامه نویسی به دست آمد از ویراستارهای پیشرفته تری نیز بهره مند شوند
+در این جا چند آی دی ای که مشهور تر است معرفی می شود</p>
+<p>ویرایشگرهای ساده</p>
+<ul class="simple">
+<li>idle</li>
+<li>notepad++‎</li>
+<li>gedit</li>
+<li>kate</li>
+<li>etc</li>
+</ul>
+<p>به جز IDLE که یک ویراستار میانه در بین ویراستار های ساده و ویراستار های پیشرفته است باقی این ویراستار ها تنها امکانات ساده و اولیه مانند رنگ بندی و حد اکثرفرمت بندی کد ها را فراهم می کنند</p>
+<p>ویرایشگرهای پیشرفته</p>
+<ul class="simple">
+<li>emacs</li>
+<li>vim</li>
+<li>inteliJ IDEA</li>
+<li>Microsoft Visual Stadio</li>
+<li>eclipse</li>
+</ul>
+<p>در این بین ویژوال استادیو مایکروسافت تنها بر روی ویندوز قابل استفاده است ولی دیگر ویراستار ها هم بر روی ویندوز و هم بر روی لینوکس قابل استفاده هستند</p>
+<p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/Python_IDE#Python">Comparison of integrated development environments for Python</a></p>
+<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/81584/what-ide-to-use-for-python">What IDE to use for Python?</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pythoncentral.io/the-best-python-ides-you-can-use-for-development/">The Best Python IDEs You Can Use for Development</a></p>
+<p class="text-left"><a class="reference external" href="http://www.bestpythonide.com/">Best Python IDE</a></p>
+<p class="text-left"><a class="reference external" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">IntegratedDevelopmentEnvironments - Python Wiki</a></p>
+</div>
+            </article>
+            <article id='05-01-01-01-where-to-start'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/05-01-01-01-where-to-start.html">از کجا شروع کنیم؟</a></h1>
+                <div><p>پایتون زبان به شدت راحتی است و بسیار خوش ساخت و منطقیست. برای همین یادگیری اش هم بسیار راحت و لذت بخش است.</p>
+<p>یک کتاب بخوانید. کلا کتاب ها خیلی ساده همه چیز رو توضیح داده اند.</p>
+<p><strong>مقاله</strong></p>
+<p><a class="reference external" href="http://libooks.ir/index.php/programming-database/469-python-fa">مجموعه آموزشهای برنامه نویسی در پایتون</a></p>
+<p><a class="reference external" href="http://libooks.ir/index.php/programming-database/453-from-now-on-python">از این پس پایتون</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/BeginnersGuide">Beginner's guide to Python</a></p>
+<p class="text-left"><a class="reference external" href="http://docs.python-guide.org/en/latest/">The Hitchhiker's guide to Python</a></p>
+<p class="text-left"><a class="reference external" href="http://learnpythonthehardway.org/book/">Learn Python the hard way</a></p>
+<p class="text-left"><a class="reference external" href="http://www.learnpython.org/">Learn Python</a></p>
+<p class="text-left"><a class="reference external" href="https://developers.google.com/edu/python/">Google's Python class</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pythonforbeginners.com/">Python for Beginners</a></p>
+<p class="text-left"><a class="reference external" href="http://net.tutsplus.com/tutorials/the-best-way-to-learn-python/">Best way to learn python</a></p>
+<p class="text-left"><a class="reference external" href="http://lurnq.com/lesson/Getting-started-with-Python-Tips-Tools-and-Resources">Python Tips, tools and resources</a></p>
+<p class="text-left"><a class="reference external" href="http://learnxinyminutes.com/docs/python/">Learn X in Y minutes - Python</a></p>
+<p class="text-left"><a class="reference external" href="http://anandology.com/python-practice-book/">Python Practice book</a></p>
+<p><strong>کتاب</strong></p>
+<p class="text-left"><a class="reference external" href="http://pythonbooks.revolunet.com/">Some free books on Python</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PythonBooks">Some list of paid books on python</a></p>
+<p class="text-left"><a class="reference external" href="http://inventwithpython.com/chapters/">Invent with Python</a></p>
+<p class="text-left"><a class="reference external" href="http://www.greenteapress.com/thinkpython/thinkpython.pdf">Think Python</a></p>
+<p class="text-left"><a class="reference external" href="http://files.swaroopch.com/python/byte_of_python.pdf">Byte of Python</a></p>
+<p class="text-left"><a class="reference external" href="http://www.briggs.net.nz/snake-wrangling-for-kids.html">Snake Wrangling for Kids</a></p>
+<p class="text-left"><a class="reference external" href="http://www.brpreiss.com/books/opus7/html/book.html">Data Structures and Algorithms with Object-Oriented Design Patterns in Python</a></p>
+<p class="text-left"><a class="reference external" href="http://en.wikibooks.org/wiki/Python_Programming">Python programming on wikibooks</a></p>
+<p class="text-left"><a class="reference external" href="http://getpython3.com/diveintopython3/">Dive Into Python 3</a></p>
+<p class="text-left"><a class="reference external" href="http://programmingcomputervision.com/">Programming Computer Vision with Python</a></p>
+<p class="text-left"><a class="reference external" href="http://pymbook.readthedocs.org/en/latest/">Python for you and me</a></p>
+<p class="text-left"><a class="reference external" href="http://programarcadegames.com/">Program Arcade Games With Python And Pygame</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/gp/product/0672329786/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=jessenollerco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0672329786">Python Essential Reference</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/gp/product/B002VJ9HSO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=jessenollerco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B002VJ9HSO">Core Python Programming</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/gp/product/0321767349/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=jessenollerco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321767349">The Python Standard Library by Example (Developer's Library)‎</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/gp/product/1430227575/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=jessenollerco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430227575">Pro Python (Expert's Voice in Open Source)‎</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Programming-Python-Mark-Lutz/dp/0596158106/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1339656283&amp;sr=1-1">Programming Python</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Beginning-Python-Professional-Magnus-Hetland/dp/1590599829/ref=sr_1_6?s=books&amp;ie=UTF8&amp;qid=1339656283&amp;sr=1-6">Beginning Python: From Novice to Professional</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Python-Cookbook-Alex-Martelli/dp/0596007973/ref=sr_1_12?s=books&amp;ie=UTF8&amp;qid=1339656283&amp;sr=1-12">Python Cookbook</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Head-First-Python-Paul-Barry/dp/1449382673/ref=sr_1_15?s=books&amp;ie=UTF8&amp;qid=1339656306&amp;sr=1-15">Head First Python</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Python-Algorithms-Mastering-Language-Experts/dp/1430232374/ref=sr_1_23?s=books&amp;ie=UTF8&amp;qid=1339656306&amp;sr=1-23">Python Algorithms: Mastering Basic Algorithms in the Python Language</a></p>
+<p class="text-left"><a class="reference external" href="http://www.amazon.com/Python-Unix-Linux-System-Administration/dp/0596515820">Python for Unix and Linux System Administration</a></p>
+<p class="text-left"><a class="reference external" href="http://www.diveintopython.net/">Dive Into Python</a></p>
+<p>البته اینجا یک سری منبع آزاد خوب گذاشته اس</p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/BeginnersGuide/Programmers">BeginnersGuide / Programmers</a></p>
+<p><strong>من که انگلیسی بلد نیستم؟</strong></p>
+<p>در اولین فرصت یا زبان انگلیسی تان را باید قوی کنید یا کلا بی خیال برنامه نویسی و ... شوید. :D هزار تا کار بهتر هست، مثلا برید شرکت تولیدی بزنید یا کار هایی که هم پولش بهتره، هم نیاز به این همه سوسول بازی نداره :D را انجام بدید.
+این جواب نبود فقط یک نکته کلی بود :D</p>
+<p><strong>سایت های مرجع فارسی:</strong></p>
+<p><a class="reference external" href="http://pythoni.ca">مرجع فارسی زبان پایتون</a></p>
+<p><a class="reference external" href="http://dotpy.ir">زبان برنامه نویسی پایتون</a></p>
+<p>لیست کاملی از وب سایت های دیگر آموزش پایتون هم دارد. البته کتاب های زیادی هم به فارسی ترجمه کرده اند که بسیار جای تقدیر دارد.</p>
+<p><a class="reference external" href="http://pythoni.ca/fa/wiki/index.php?title=%D9%85%D9%86%D8%A7%D8%A8%D8%B9_%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C">منابع آموزشی</a></p>
+<p><a class="reference external" href="http://barnamenevis.org/forumdisplay.php?60-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-Perl-Python-Ruby">انجمن برنامه نویس: بخش پایتون</a></p>
+<p><a class="reference external" href="http://barnamenevis.org/showthread.php?45804-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86">آموزش پایتون</a></p>
+<p><a class="reference external" href="http://www.downloadha.com/1390/11/%d9%81%d9%8a%d9%84%d9%85-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%d9%8a%d8%b3%d9%8a-%d9%be%d8%a7%db%8c%d8%aa%d9%88%d9%86-python-programming-video-tutorials">فيلم آموزش برنامه نويسي پایتون</a></p>
+<p><a class="reference external" href="http://ehsanavr.com/?p=2953">آموزش پایتون به زبان فارسی</a></p>
+<p><a class="reference external" href="http://p30learning.com/listings/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-%D8%AA%D9%88%D8%B3%D8%B7-%DA%AF%D9%88%DA%AF%D9%80%D9%80%D9%80%D9%84">آموزش پایتون توسط گوگـــل</a></p>
+<p><a class="reference external" href="http://digimind.ir/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-%D9%82%D8%B3%D9%85%D8%AA-%D9%87%D8%A7%DB%8C-1-3-%D8%AA%D8%A7-5-3/">آموزش پایتون قسمت های ۱-۳ تا ۵-۳</a></p>
+<p><a class="reference external" href="http://www.aparat.com/video/video/result?text=%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86">پایتون - آپارات</a></p>
+<p>برگرفته شده از <a class="reference external" href="http://blog.efazati.org/post/how-learn-python">http://blog.efazati.org/post/how-learn-python</a></p>
+</div>
+            </article>
+            <article id='05-02-01-01-books-to-read'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/05-02-01-01-books-to-read.html"><small>چه کتابهایی برای پایتون بخوانیم؟</small></a></h2>
+                <div><p>خالی...</p>
+</div>
+            </article>
+            <article id='05-03-01-01-python-schools'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/05-03-01-01-python-schools.html"><small>آموزشگاه های پایتون</small></a></h2>
+                <div><p>به نظر می رسد آموزش پایتون ساده تر از آن باشد که نیاز به کلاس حس شود ولی ممسلما خوانندگان در صورت احساس نیاز با همی صبر و حوصله و جستجو آموزشگاه های معتبری را خواهند یافت که در آنها این زبان شیرین تدریس می شود</p>
+<p>به عنوان مثال مشاهده می شود که انجمن های علمی در دانشگاه های دولتی سطح شهر اقدام به برگزاری دوره های آموزشی با کیفیت مناسب و قیمت کم در مقایسه با آموزشگاه های آزاد می کنند</p>
+<p>در صورتی که در آموزشگاهی این زبان را می آموزید و از کیفیت آموزش آنجا راضی هستید اطلاعات مربوط به این آموزشگاه را برای استفاده دیگران قرار دهید.</p>
+</div>
+            </article>
+            <article id='05-04-01-01-online-education'>
+                    <h2><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-01-01-online-education.html"><small>آموزش آنلاین</small></a></h2>
+                <div><p>در طول دهه گذشته پایتون در تمام حوزه های برنامه نویسی بین توسعه دهندگان محبوبیت پیدا کرده. از برنامه نویسیان وب تا طراحان بازی های ویدیوی عاشق این زبان شده اند. چرا؟ به دلیل سهولت یاد گیری، سهولت استفاده و قدرت فوق العاده.</p>
+<p>برای یادگیری پایتون منابع بسیاری در وب وجود دارند که بیشتر آنها کاملا رایگان هستند. در اینجا به چند سایت خوب برای یادگیری آنلاین پایتون اشاره می کنیم:</p>
+</div>
+            </article>
+            <article id='05-04-02-01-codecademy'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-02-01-codecademy.html"><small>Codecademy</small></a></h3>
+                <div><p><a class="reference external" href="http://www.codecademy.com/">Codecademy</a> یکی از مشهورترین سایتها برای یادگیری برنامه نویسی به صورت محاوره ای یا interactive است که دارای رابط کاربری خوب به همراه دوره های متنوع و در سطوح مختلف است.</p>
+</div>
+            </article>
+            <article id='05-04-03-01-learnstreet'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-03-01-learnstreet.html"><small>LearnStreet</small></a></h3>
+                <div><p class="text-left"><a class="reference external" href="http://www.learnstreet.com/">LearnStreet</a> is an early-stage startup focused on changing the way people of all backgrounds and skill levels learn how to code.</p>
+<p class="text-left">We are a small, passionate team of product craftsmen, hackers and designers doing what we love—building a service that inspires users to tap into their amazing potential. We believe putting the power of coding in more hands can unleash a wave of creativity that makes the world a better place for all of us. We’re proud to have already received some kind words from the folks at LAUNCHedu.</p>
+<p class="text-left">LearnStreet adopts command prompt-styled code interpreters with human language to explain function and encourage you whenever possible, the kind of command prompt you want for your own local machine. However, the code interpreter could be as rude as standard command prompt, as most of the times it requires you to type in the absolute same code and content it asks for.</p>
+<p class="text-left">Other than that, it’s truly friendly and enjoyable, and most importantly, free.</p>
+</div>
+            </article>
+            <article id='05-04-04-01-codingbat'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-04-01-codingbat.html"><small>CodingBat</small></a></h3>
+                <div><p class="text-left"><a class="reference external" href="http://codingbat.com/">CodingBat</a> is a free site of live coding problems to build coding skill in Java, and now in Python (<a class="reference external" href="http://codingbat.com/prob?id=Demo.arrayLike">example problem</a>), created by <a class="reference external" href="http://www-cs-faculty.stanford.edu/~nick/">Nick Parlante</a> who is computer science lecturer at Stanford. The coding problems give immediate feedback, so it's an opportunity to practice and solidify understanding of the concepts. The problems could be used as homework, or for self-study practice, or in a lab, or as live lecture examples. The problems, all listed off the <a class="reference external" href="http://codingbat.com/">CodingBat home</a>, have low overhead: short problem statements (like an exam) and immediate feedback in the browser. The idea for CodingBat came from my experience teaching CS at Stanford combined with seeing how student's used unit-tests in more advanced courses, and crystalized when I saw an <a class="reference external" href="http://www.cs.duke.edu/~ola/">Owen Astrachan</a> demo of a unit-testing thing he uses with his Duke students.</p>
+</div>
+            </article>
+            <article id='05-04-05-01-online-python-tutor'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-05-01-online-python-tutor.html"><small>Online Python Tutor</small></a></h3>
+                <div><p><a class="reference external" href="http://www.pythontutor.com/visualize.html">Online Python Tutor</a> is a free educational tool that helps students overcome a fundamental barrier to learning programming: understanding what happens as the computer executes each line of a program's source code. Using this tool, a teacher or student can write a Python program directly in the web browser and visualize what the computer is doing step-by-step as it executes the program.</p>
+</div>
+            </article>
+            <article id='05-04-06-01-python-monk'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-06-01-python-monk.html"><small>PythonMonk</small></a></h3>
+                <div><p>In a world where teaching and learning is no longer a one-off transaction, <a class="reference external" href="http://pythonmonk.com/">CodeMonk</a> aims to fill the gap by helping programmers learn and level up continuously.</p>
+</div>
+            </article>
+      </div>
+    </div>
+    <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/vendor/jquery.js"></script>
+    <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/foundation.min.js"></script>
+    <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/script.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
