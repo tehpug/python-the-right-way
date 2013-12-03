@@ -1,0 +1,14 @@
+وب‌آموز
+###################
+
+:lang: fa
+:slug: 05-04-09-01-web-amoz
+:child: true
+
+کلاس های مجازی با حضور استاد و دانشجویان به صورت کاملا آنلاین در این سایت عرضه می‌شود که در دروه مقدماتی به مفاهیم پایه برنامه نویسی و مفاهیم شبکه و برنامه نویسی شبکه در پایتون پرداخته می‌شود و در دوره پیشرفته بیشتر مباحث امنیت و تکنیک های آن بررسی می‌شوند.
+
+`دوره مقدماتی <http://www.webamooz.ir/home/courses/python-for-ethical-hackers-1/>`_
+
+`دوره پیشرفته <http://www.webamooz.ir/home/courses/python-for-ethical-hackers-2/>`_
+
+اسلاید های دوره در `SildeShare قابل مشاهده <http://www.slideshare.net/itmard>`_ هستند که امکان `دانلود <http://kamalifard.ir/pysec101/>`_ آنها نیز وجود دارد.

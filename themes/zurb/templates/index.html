@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if articles %}
+        {% for article in (articles_page.object_list if articles_page else articles) %}
+            <article id='{{ article.slug }}'>
+                {% if article.slug[3:5] == '01' %}
+                    <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                {% elif article.slug[6:8] == '01' %}
+                    <h2><a href="{{ SITEURL }}/{{ article.url }}"><small>{{ article.title }}</small></a></h2>
+                {% else %}
+                    <h3><a href="{{ SITEURL }}/{{ article.url }}"><small>{{ article.title }}</small></a></h3>
+                {% endif %}
+                <div>{{ article.summary }}</div>
+            </article>
+        {% endfor %}
+    {% endif %}
+{% endblock content %}

@@ -1,0 +1,51 @@
+کدام IDE؟
+#########
+
+:lang: fa
+:slug: 04-01-01-01-which-ide
+
+یکی از سوالاتی که همواره در ذهن افراد تازه کار وجود دارد این است که از کدام آی دی ای استفاده کنند و مدت زمان زیادی از وقت خود را برای یافتن یه آی دی ای صرف می کنند
+گرچه وجود یک آی دی ای خوب در برنامه نویسی راحت تر موثر است ولی نباید آنچنان در گیر یافتن یک آی دی ای شد که خود برنامه نویسی را فراموش کرد
+برنامه نویسان همواره باید این نکته را مد نظر داشته باشند که تغییر از یک آی دی ای به یک آی دی ای دیگر چندان سخت نیست و بهتر است با هر آنچه در اختیار دارند برنامه نویسی و و یاد گیری را آغاز کنند و به مرور زمان هر گاه احساس نیاز به یک آی دی ای و ویراستار دیگر پیدا کردند به آن کوچ کنند
+با این حال معمولا توصیه می شود در شروع یادگیری یک زبان برنامه نویسی ازویراشتارهای ساده تر استفاده شود و زمانی که تسلط کافی در برنامه نویسی به دست آمد از ویراستارهای پیشرفته تری نیز بهره مند شوند
+در این جا چند آی دی ای که مشهور تر است معرفی می شود
+
+ویرایشگرهای ساده
+
+* idle
+* notepad++‎
+* gedit
+* kate
+* etc
+
+به جز IDLE که یک ویراستار میانه در بین ویراستار های ساده و ویراستار های پیشرفته است باقی این ویراستار ها تنها امکانات ساده و اولیه مانند رنگ بندی و حد اکثرفرمت بندی کد ها را فراهم می کنند
+
+ویرایشگرهای پیشرفته
+
+* emacs
+* vim
+* inteliJ IDEA
+* Microsoft Visual Stadio
+* eclipse
+
+در این بین ویژوال استادیو مایکروسافت تنها بر روی ویندوز قابل استفاده است ولی دیگر ویراستار ها هم بر روی ویندوز و هم بر روی لینوکس قابل استفاده هستند
+
+.. class:: text-left
+
+`Comparison of integrated development environments for Python <https://en.wikipedia.org/wiki/Python_IDE#Python>`_
+
+.. class:: text-left
+
+`What IDE to use for Python? <http://stackoverflow.com/questions/81584/what-ide-to-use-for-python>`_
+
+.. class:: text-left
+
+`The Best Python IDEs You Can Use for Development <http://www.pythoncentral.io/the-best-python-ides-you-can-use-for-development/>`_
+
+.. class:: text-left
+
+`Best Python IDE <http://www.bestpythonide.com/>`_
+
+.. class:: text-left
+
+`IntegratedDevelopmentEnvironments - Python Wiki <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_

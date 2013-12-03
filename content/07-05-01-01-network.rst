@@ -1,0 +1,82 @@
+شبکه
+####
+
+:lang: fa
+:slug: 07-05-01-01-network
+:child: true
+
+پایتون دو سطح برای دسترسی به شبکه فراهم می کند، در سطح پایین شما می توانید به سوکت ها دسترسی داشته باشید که به شما اجازه میدهد سرویس دهنده و سرویس گیرنده های تحت شبکه را پیاده سازی کنید، و در سطح بالا پایتون کتابخانه های دسترسی به پروتکل های لایه application مثل HTTP و FTP و … را فراهم می کند.
+پایتون دسترسی ساده به شبکه برای شما فراهم می‌کنند و برای برنامه نویسی سوکت ها به صورت RAW نیز امکانات فوق العاده ای در اختیار کاربر قرار می‌دهد.
+پایتون کتابخانه های فوق العاده ای در زمینه شبکه و امنیت دارد و امکان برنامه نویسی شبکه به صورت Non-blocking را به راحتی فراهم می‌کند.
+برای مثال کتاب‌خانه های شبکه پایتون :
+
+Twisted__
+
+__ http://twistedmatrix.com/
+
+`Eventlet <http://eventlet.net/>`_
+
+Requests__
+
+__ http://docs.python-requests.org/
+
+`Scapy <http://www.secdev.org/projects/scapy/>`_
+
+و اشاره کرد.
+
+پایتون همچنین ماژول های مختلفی برای شبکه دارد که به راحتی می‌توان با استفاده از آن ها بسیاری از کارها را با چند خط کد ساده انجام داد به طول مثال :
+
+برای ایجاد یک سرور TCP یا UDP می‌توان از ماژول SocketServer استفاده کرد.
+
+برای ایجاد یک وب سرور ساده می‌توان از ماژول SimpleHTTPServer استفاده کرد.
+
+
+برای آشنایی بیشتر با نحوه برنامه نویسی شبکه در پایتون مطالب زیر شروع خوبی برای اینکار هستند:
+
+.. class:: text-left
+
+`Python socket – network programming tutorial <http://www.binarytides.com/python-socket-programming-tutorial/>`_
+
+.. class:: text-left
+
+`Socket Programming HOWTO <http://docs.python.org/2/howto/sockets.html>`_
+
+.. class:: text-left
+
+`Python Network Programming <http://www.tutorialspoint.com/python/python_networking.htm>`_
+
+در ضمن کتاب `Foundations of Python Network Programming <http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037/>`_ به صورت مفصل تر به این موضوع پرداخته است، در این کتاب به پکیج‌های مفیدی معرفی شده که بعضی از آنها عبارتند از:
+
+برای کار با نقشه‌های گوگل می توانید از بسته `googlemaps <https://pypi.python.org/pypi/googlemaps>`_ استفاده کنید.
+
+برای صحبت با پروتکل HTTP کتابخانه `httplib <http://docs.python.org/2/library/httplib.html>`_ استفاده کنید.
+
+کتابخانه `سوکت <http://docs.python.org/2/library/socket.html>`_ برای کار با شبکه در سطح پایین استفاده می شود.
+
+همچنین در پایتون با بسته `pydns <https://pypi.python.org/pypi/pydns>`_ می توانید با سرورهای DNS ارتباط برقرار کنید.
+
+پایتون قابلیت کد کردن داده ها با `JSON <http://docs.python.org/2/library/json.html>`_ و فشرده کردن آنها با `zlib <http://docs.python.org/2/library/zlib.html>`_ و `gzip <http://docs.python.org/2/library/gzip.html>`_ را دارد.
+
+رمزنگاری TLS و SSL با کتابخانه `ssl <http://docs.python.org/2/library/ssl.html>`_ انجام می شود.
+
+با ماژول `logging <http://docs.python.org/2/library/logging.html>`_ امکان ثبت رخدادهای برنامه وجود دارد.
+
+برای برنامه نویسی behaviour-driven در پاتون بسته `lancelot <https://pypi.python.org/pypi/lancelot>`_ این امکان را فراهم می کند.
+
+`Twisted <https://twistedmatrix.com/trac/>`_ یک فریم‌ورک event-driven برای کار با شبکه است که از پروتکل های مختلف پشتیبانی می کند، برای اطاعات بیشتر در مورد Twisted به صفحه `ویکی‌پیدا <https://en.wikipedia.org/wiki/Twisted_(software)>`_ ‌ پروژه مراجعه کنید.
+
+فریم‌ورک `SocketServer <http://docs.python.org/2/library/socketserver.html#module-SocketServer>`_ برنامه نویسی سرور‌های شبکه را آسان می کند.
+
+پایتون با بسته `python-memcached <https://pypi.python.org/pypi/python-memcached/>`_ امکان اتصال به سرویس‌دهنده memcached را فراهم می کند.
+
+برای درهم سازی و hash کردن داده‌ها می توانید از `hashlib <http://docs.python.org/2/library/hashlib.htmld/>`_ استفاده کنید.
+
+`pyzmq <https://pypi.python.org/pypi/pyzmq/2.2.0>`_ امکان اتصال پایتون به ØMQ را می دهد.
+
+کتاب‌خانه های `urllib <http://docs.python.org/2/library/urllib.html>`_, `urllib2 <http://docs.python.org/2/library/urllib2.html>`_ و `urlparse <http://docs.python.org/2/library/urlparse.html>`_ امکان اتصال به پروتکل HTTP و کار با url ها را فراهم می کنند، بسته `requests <https://pypi.python.org/pypi/requests>`_ نیز این قابلیت را در سطح بالاتر و با سهولت بیشتر فراهم می کند.
+
+در پایتون امکان ایجاد و اجرای اسکریپت‌های cgi در سرور HTTP با ماژول `cgi <http://docs.python.org/2/library/cgi.html>`_ وجود دارد.
+
+`cookielib <http://docs.python.org/2/library/cookielib.html>`_ نیز برای handle کوکی‌ کلاینت‌های HTTP استفاده می شود.
+
+برای شبیه‌سازی قابلیت‌های مرورگرها و مرور وب با پایتون می توان از بسته `mechanize <https://pypi.python.org/pypi/mechanize/>`_ استفاده کرد.

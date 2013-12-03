@@ -1,0 +1,137 @@
+پایتون ۲ یا ۳
+#############
+
+:lang: fa
+:slug: 03-01-01-01-python-2-or-3
+
+پایتون ۳ یا ۳۰۰۰ یا py3k نسخه ای از پایتون است که تغییرات زیاد و پایه ای دارد و در کل backward compatibilly ندارد.
+
+فهرست برخی از تغییرات عمده پایتون ۳ به نقل از ویکیپدیا
+
+    تغییر پرینت چون یک تابع غیر قابل انتقال است نه یک توضیح. این باعث می‌شود که تغییر یک ماژول برای استفاده از یک تابع پرینت متفاوت، آسان باشد و بنابراین ایجاد نحو منظم تر می‌شود. در پایتون ۲٫۶ این امکان با تایپ کردن from – future – import print – function فراهم شد.
+    اضافه شدن حمایت از یادآوری تابع انتخابی که می‌تواند برای معرفی تایپ خصوصی یا اهداف دیگر استفاده شود.
+    یکسان کردن تایپ str/Unicode، به نمایندگی از یک متن، و معرفی یک تایپ byte تغییر ناپذیر؛ با یک تایپ مطابق با bytearray تغییر پذیر، که هر دو آرایه از بایت را ارائه می‌کنند.
+    از بین بردن خصوصیات سازگاری معکوس، شامل کلاس‌های به فرم قبل، قسمت کردن اعداد صحیح، استثناءهای رشته‌ای، و گزارش‌های نسبتاً نا آشکار.
+
+در سایت اصلی پایتون اینگونه نوشته شده است که اگر کارتونو توانستنید با پایتون ۳ انجام دهید. دمتون گرم. ادامه بدهید.
+
+در کل پایتون ۳ با مشکل پشتیبانی محدود کتابخانه ها مواجه است. هنوز کتابخانه‌هایی هستند که به پایتون ۳ port نشده‌اند.
+از طرفی اکثر سرور ها از سری python 2.x پشتیبانی می کنند.
+در کل پایتون ۳ زبان کاملی است و پشتیبانی خیلی بهتری از unicode دارد.
+از طرفی ابزار هایی مثل 2to3 کمک می کند کد های قدیمیتان را به پایتون ۳ تبدیل کنید (البته نه خیلی راحت)
+
+.. class:: text-left
+
+`2to3 - Automated Python 2 to 3 code translation <http://docs.python.org/release/3.0.1/library/2to3.html#to3-reference>`_
+
+**چه کتابخانه هایی هنوز به پایتون ۳ منتقل نشده اند؟**
+
+.. class:: text-left
+
+`gevent - Python networking library <http://code.google.com/p/gevent/>`_
+
+.. class:: text-left
+
+`Twisted <http://twistedmatrix.com/trac/wiki>`_
+
+البته یک سری از کتابخانه ها به صورت غیر رسمی port شده‌اند:
+
+.. class:: text-left
+
+`Some unofficial binaries are available for Python 3 PIL <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_
+
+کتابخانه مهمی که به پایتون ۳ منتقل شده‌اند:
+
+.. class:: text-left
+
+`Django‎ <https://docs.djangoproject.com/en/1.5/faq/install/#can-i-use-django-with-python-3>`_
+
+.. class:: text-left
+
+`PySide <http://wiki.python.org/moin/PySide>`_
+
+.. class:: text-left
+
+`PyGObject <https://live.gnome.org/PyGObject>`_
+
+.. class:: text-left
+
+`PyQt4 <http://wiki.python.org/moin/PyQt4>`_
+
+.. class:: text-left
+
+`py2exe <http://www.py2exe.org/index.cgi/Tutorial#Step52>`_
+
+.. class:: text-left
+
+`CherryPy — A Minimalist Python Web Framework <http://www.cherrypy.org/>`_
+
+.. class:: text-left
+
+`Pylons Project <http://www.pylonsproject.org/>`_
+
+.. class:: text-left
+
+`Python Imaging Library (PIL)‎ <http://www.pythonware.com/products/pil/>`_
+
+مقایسه در کد
+
+قدیمی:
+
+.. class:: text-left
+
+::
+
+  print "The answer is", 2*2
+  print x,           # Trailing comma suppresses newline
+  print              # Prints a newline
+  print >>sys.stderr, "fatal error"
+  print (x, y)       # prints repr((x, y))
+
+جدید:
+
+.. class:: text-left
+
+::
+
+  print("The answer is", 2*2)
+  print(x, end=" ")  # Appends a space instead of a newline
+  print()            # You must call the function!
+  print("fatal error", file=sys.stderr)
+  print((x, y))      # Not the same as print(x, y)!
+
+.. class:: text-left
+
+`What’s New in Python <http://docs.python.org/3.4/whatsnew/index.html>`_
+
+نتیجه گیری
+
+در کل پایتون ۲ با پایتون ۳ تفاوت خیلی زیادی در کد ندارند و برنامه نویس پایتون ۲ به راحتی می تواند پایتون ۳ را یاد بگیرد. اما منابع آموزشی مربوط به پایتون ۲ بسیار زیاد تر. ابزار بیشتر و ... دارند.
+توصیه آخرم این است که تازه وارد ها با پایتون ۲ کار کنند و فقط از پایتون ۳ استفاده کنند که دقیقا می دانند می خواهند چه استفاده ای از پایتون ۳ بکنند. یعنی تمامی نیاز مندی کارشان را در نظر بگیرند.
+
+مقالات مرتبط
+
+.. class:: text-left
+
+`Let's talk about Python 3.0 <http://www.b-list.org/weblog/2008/dec/05/python-3000/>`_
+
+.. class:: text-left
+
+`Pros and Cons about Python 3 <http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/>`_
+
+.. class:: text-left
+
+`Python2orPython3 <http://wiki.python.org/moin/Python2orPython3>`_
+
+.. class:: text-left
+
+`Python 2 vs Python 3 and Tutorial <http://stackoverflow.com/questions/442352/python-2-vs-python-3-and-tutorial>`_
+
+
+.. class:: text-left
+
+`Should I learn Python 2 before 3, or start directly from Python 3? <http://stackoverflow.com/questions/170921/should-i-learn-python-2-before-3-or-start-directly-from-python-3>`_
+
+.. class:: text-left
+
+`Differences between Python 2.x and Python 3.x <http://py.onepotcooking.com/posts/2011-01-27/differences-between-python-2-x-and-python-3-x/>`_

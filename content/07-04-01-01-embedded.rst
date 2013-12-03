@@ -1,0 +1,72 @@
+امبدد(Embedded)
+###############
+
+:lang: fa
+:slug: 07-04-01-01-embedded
+:child: true
+
+به طور کلی دو روش برای استفاده از پایتون به صورت embedded وجود دارد:
+
+* استفاده از زبان پایتون در برنامه کاربردی و توسعه و نوشتن برنامه های مورد نیاز آن برنامه به کمک پایتون و یا استفاده از پایتون برای پشتیبانی از آن برنامه و نوشتن کدهای با استفاده از این زبان
+
+.. class:: text-left
+
+`Embedding Python in Another Application <http://docs.python.org/2/extending/embedding.html>`_
+
+* دستگاهایی که به اندازه کافی حافظه داشته باشند و دارای سرعت بالا برای اجرای لینوکس و انواع خاص آن می توانند از پایتون و یا CPython استفاده کنند. که در بعضی سخت افزارها که از پردازنده  ARM استفاده می کنند هم استفاده شده است.
+
+.. class:: text-left
+
+`Embedded Python <http://wiki.python.org/moin/EmbeddedPython>`_
+
+.. class:: text-left
+
+`PYTHON FOR ARM-LINUX <http://www.vanille-media.de/site/index.php/projects/python-for-arm-linux/>`_
+
+.. class:: text-left
+
+`Python Embedded Tools <http://www.nongnu.org/pyet/>`_
+
+.. class:: text-left
+
+`The Owl Embedded Python System <http://embeddedpython.org/index.php/The_Owl_Embedded_Python_System>`_
+
+.. class:: text-left
+
+`Building eLua in Linux <http://www.eluaproject.net/doc/v0.8/en_building_unix.html>`_
+
+.. class:: text-left
+
+`Python-on-a-Chip <http://code.google.com/p/python-on-a-chip/>`_
+
+.. class:: text-left
+
+`PyMite <http://wiki.python.org/moin/PyMite>`_
+
+.. class:: text-left
+
+`Python - Openmoko <http://wiki.openmoko.org/wiki/Python>`_
+
+.. class:: text-left
+
+`AarLogic - Round Solutions <http://www.roundsolutions.com/shop/en/OEM-GSM-GPS-Solutions/AarLogic>`_
+
+.. class:: text-left
+
+`embedded Linux Gnublin <http://gnublin.embedded-projects.net/>`_
+
+.. class:: text-left
+
+`GSM/GPRS modem modules <http://www.telit.com/en/products/python/why-python.php>`_
+
+.. class:: text-left
+
+`How to port Python to VxWorks <http://mail.python.org/pipermail/python-list/1999-May/006956.html>`_
+
+.. class:: text-left
+
+`VxWorks <http://en.wikipedia.org/wiki/VxWorks>`_
+
+.. class:: text-left
+
+`Building Image Processing Embedded Systems using Python, Part 1 <http://www.linuxforu.com/2012/01/building-image-processing-embedded-systems-using-python-part-1/>`_
