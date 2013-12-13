@@ -1,0 +1,9 @@
+Web2Py
+#########
+
+:lang: fa
+:slug: 07-02-03-04-web2py
+
+.. class:: text-left
+
+`Building a Twitter clone in Web2Py <http://fragile.org.uk/2013/06/twitter-clone-tutorial-in-web2py-part-1-getting-started/>`_

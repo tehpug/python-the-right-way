@@ -1,0 +1,10 @@
+Bottle
+#########
+
+:lang: fa
+:slug: 07-02-03-05-bottle
+
+
+.. class:: text-left
+
+`Developing with Bottle- Part 1 <http://www.realpython.com/blog/python/developing-with-bottle-part-1/>`_

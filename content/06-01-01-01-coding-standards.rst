@@ -8,6 +8,10 @@
 
 بسیار توصیه می شود که برنامه نویسان نرم افزارها حتما از این استانداردها استفاده کنند تا کدهایشان به آسانی توسط سایرین خوانده شود.
 
+برای آشنایی بیشتر با لزوم استفاده از استانداردها می‌توانید به مطلب زیر مراجعه کنید:
+
+`معاهده‌های کدنویسی (Coding conventions) <http://zebardast.ir/%D9%85%D8%B9%D8%A7%D9%87%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%DA%A9%D8%AF-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-coding-conventions/>`_
+
 **چرا استاندارد نویسی اهمیت دارد؟**
 
 گرچه استاندارد نویسی در ابتدا مشکل است و بیهوده به نظر می رسد، اما زمانی که نرم افزارتان بزرگ شود و حجم آن به چند هزار خط در چند صد فایل برسد، فواید آن مشخص می شود. بعضی از این فواید عبارتند از:
@@ -20,11 +24,19 @@
 
 `pep8 - Python style guide checker <https://pypi.python.org/pypi/pep8>`_
 
+.. class:: text-left
+
+`PEP 257 docstring style checker <https://github.com/GreenSteam/pep257>`_
+
 در لینک های زیر با استانداردها و توصیه های کدنویسی در پایتون آشنا می شوید:
 
 .. class:: text-left
 
 `Style Guide for Python Code <http://www.python.org/dev/peps/pep-0008/>`_
+
+.. class:: text-left
+
+`Google Python Style Guide <http://google-styleguide.googlecode.com/svn/trunk/pyguide.html>`_
 
 .. class:: text-left
 

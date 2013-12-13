@@ -1,0 +1,270 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary { display: block }
+audio,
+canvas,
+video { display: inline-block }
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden] { display: none }
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body { margin: 0 }
+a:focus { outline: thin dotted }
+a:active,
+a:hover { outline: 0 }
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+abbr[title] { border-bottom: 1px dotted }
+b,
+strong { font-weight: bold }
+dfn { font-style: italic }
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace,serif;
+    font-size: 1em;
+}
+pre { white-space: pre-wrap }
+q { quotes: "\201C" "\201D" "\2018" "\2019" }
+small { font-size: 80% }
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup { top: -0.5em }
+sub { bottom: -0.25em }
+img { border: 0 }
+svg:not(:root) { overflow: hidden }
+figure { margin: 0 }
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button,
+input { line-height: normal }
+button,
+select { text-transform: none }
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] { cursor: default }
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.pln { color: #cccccc }
+@media screen {
+    .str { color: #99cc99 }
+    .kwd { color: #cc99cc }
+    .com { color: #999999 }
+    .typ { color: #6699cc }
+    .lit { color: #f99157 }
+    .pun { color: #cccccc }
+    .opn { color: #cccccc }
+    .clo { color: #cccccc }
+    .tag { color: #f2777a }
+    .atn { color: #f99157 }
+    .atv { color: #66cccc }
+    .dec { color: #f99157 }
+    .var { color: #f2777a }
+    .fun { color: #6699cc }
+}
+@media print, projection {
+    .str { color: #006600 }
+    .kwd {
+        color: #006;
+        font-weight: bold;
+    }
+    .com {
+        color: #600;
+        font-style: italic;
+    }
+    .typ {
+        color: #404;
+        font-weight: bold;
+    }
+    .lit { color: #004444 }
+    .pun,
+    .opn,
+    .clo { color: #444400 }
+    .tag {
+        color: #006;
+        font-weight: bold;
+    }
+    .atn { color: #440044 }
+    .atv { color: #006600 }
+}
+pre.prettyprint {
+    background: #2d2d2d;
+    font-family: Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace;
+    font-size: 12px;
+    line-height: 1.618;
+    padding: 15px 10px;
+    direction: ltr;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+code {
+    font-family: Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace;
+    direction: ltr;
+    color: #ccc;
+    padding: 1px 5px;
+    display: inline-block;
+    background-color: #ececec;
+    color: #222;
+    border-radius: 2px;
+    font-size: 13px;
+}
+code a { border-bottom: none!important }
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #cccccc;
+}
+
+@font-face{
+   font-family:Mitra;
+   font-weight:normal;
+   font-style:normal;
+   src:url("../font/BMitra-Regular.eot");
+   src:url("../font/BMitra-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../font/BMitra-Regular.woff") format("woff"),
+       url("../font/BMitra-Regular.ttf") format("truetype"),
+       url("../font/BMitra-Regular.svg#Mitra") format("svg")
+}
+
+@font-face{
+   font-family:Mitra;
+   font-weight:bold;
+   font-style:normal;
+   src:url("../font/BMitra-Bold.eot");
+   src:url("../font/BMitra-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../font/BMitra-Bold.woff") format("woff"),
+       url("../font/BMitra-Bold.ttf") format("truetype"),
+       url("../font/BMitra-Bold.svg#Mitra") format("svg")
+}
+
+@font-face{
+   font-family:Nassim;
+   font-weight:normal;
+   font-style:normal;
+   src:url("../font/nassim-regular.eot");
+   src:url("../font/nassim-regular.eot?#iefix") format("embedded-opentype"),
+       url("../font/nassim-regular.woff") format("woff"),
+       url("../font/nassim-regular.ttf") format("truetype"),
+       url("../font/nassim-regular.svg#Nassim") format("svg")
+}
+
+@font-face{
+   font-family:Nassim;
+   font-weight:bold;
+   font-style:normal;
+   src:url("../font/nassim-bold.eot");
+   src:url("../font/nassim-bold.eot?#iefix") format("embedded-opentype"),
+       url("../font/nassim-bold.woff") format("woff"),
+       url("../font/nassim-bold.ttf") format("truetype"),
+       url("../font/nassim-bold.svg#Nassim") format("svg")
+}
+
+body{
+   font-family:Mitra,Nassim,"Baskerville",Georgia,Times,serif !important;
+   font-size:20px;
+   line-height:1.618;
+   -webkit-font-smoothing:antialiased;
+   background-color: #eee;
+   color: #222;
+}
+
+a {
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    color: #77a;
+    text-decoration: none;
+}
+a:hover { color: #222; }
+
+h1, h2, h3, h4, h5, h6 {
+   font-family:Mitra,Nassim,"Baskerville",Georgia,Times,serif !important;
+}
+
+h2, h3 {
+    letter-spacing: -2px;
+    font-size: 32.36px;
+}
+h4 {
+    letter-spacing: -1px;
+    font-size: 20px;
+}
+::selection { background-color: #dedede }
+::-moz-selection { background-color: #dedede }

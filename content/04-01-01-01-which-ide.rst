@@ -12,21 +12,25 @@
 
 ویرایشگرهای ساده
 
-* idle
-* notepad++‎
-* gedit
-* kate
-* etc
+* IDLE
+* Notepad++‎
+* Gedit
+* Kate
+* ...
 
 به جز IDLE که یک ویراستار میانه در بین ویراستار های ساده و ویراستار های پیشرفته است باقی این ویراستار ها تنها امکانات ساده و اولیه مانند رنگ بندی و حد اکثرفرمت بندی کد ها را فراهم می کنند
 
 ویرایشگرهای پیشرفته
 
-* emacs
-* vim
-* inteliJ IDEA
+* `Emacs <http://caisah.info/emacs-for-python/>`_
+* `Sublime <http://dbader.org/blog/setting-up-sublime-text-for-python-development>`_
+* `PyCharm <http://www.jetbrains.com/pycharm/>`_
+* `PyDev <http://pydev.org/>`_
+* `Geany <http://geany.org/>`_
+* VIM
+* InteliJ IDEA
 * Microsoft Visual Stadio
-* eclipse
+* Eclipse
 
 در این بین ویژوال استادیو مایکروسافت تنها بر روی ویندوز قابل استفاده است ولی دیگر ویراستار ها هم بر روی ویندوز و هم بر روی لینوکس قابل استفاده هستند
 

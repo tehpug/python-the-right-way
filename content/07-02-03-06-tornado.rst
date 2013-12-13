@@ -1,0 +1,14 @@
+Tornado
+#########
+
+:lang: fa
+:slug: 07-02-03-06-tornado
+
+
+.. class:: text-left
+
+`Tornado official documentation <http://www.tornadoweb.org/en/stable/documentation.html>`_
+
+.. class:: text-left
+
+`Fastest database for Tornado <http://www.peterbe.com/plog/fastestdb>`_

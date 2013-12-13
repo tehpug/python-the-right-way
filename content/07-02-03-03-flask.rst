@@ -1,0 +1,35 @@
+فلسک
+#########
+
+:lang: fa
+:slug: 07-02-03-03-flask
+
+فلسک یکی از میکروفریم‌های پایتون است که انعطاف‌پذیری بالایی برای انجام کار‌های مختلف دارد.
+
+.. class:: text-left
+
+`Flask Mega Tutorial Series <http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_
+
+.. class:: text-left
+
+`Designing a RESTful API with Python and Flask <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
+
+.. class:: text-left
+
+`Building websites in Python with Flask <http://maximebf.com/blog/2012/10/building-websites-in-python-with-flask>`_
+
+.. class:: text-left
+
+`How I structure my Flask apps <http://mattupstate.com/python/2013/06/26/how-i-structure-my-flask-applications.html>`_
+
+.. class:: text-left
+
+`Designing a RESTful API using Flask-RESTful <http://blog.miguelgrinberg.com/post/designing-a-restful-api-using-flask-restful>`_
+
+.. class:: text-left
+
+`Rapid Web Prototyping with Lightweight Tools <http://www.pixelmonkey.org/2013/03/13/rapid-web-prototyping-with-lightweight-tools>`_
+
+.. class:: text-left
+
+`Build a Simple, Static, Markdown-Powered Blog with Flask <http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/>`_

@@ -1,0 +1,39 @@
+جنگو
+#########
+
+:lang: fa
+:slug: 07-02-03-02-django
+
+جنگو فریم‌ورک کامل و جامعی است.
+
+.. class:: text-left
+
+`The official Django documentation <https://docs.djangoproject.com/en/1.5/>`_
+
+.. class:: text-left
+
+`Getting started with Django <http://gettingstartedwithdjango.com/>`_
+
+.. class:: text-left
+
+`Building a hacker news clone in Django <http://arunrocks.com/building-a-hacker-news-clone-in-django-part-1/>`_
+
+.. class:: text-left
+
+`Djen of Django <http://agiliq.com/books/djenofdjango/>`_
+
+.. class:: text-left
+
+`Deploying Django <http://www.rdegges.com/deploying-django/>`_
+
+.. class:: text-left
+
+`Django by Example <http://www.lightbird.net/dbe/>`_
+
+.. class:: text-left
+
+`Django From the Ground Up (video tutorials) <http://showmedo.com/videotutorials/series?name=PPN7NA155>`_
+
+.. class:: text-left
+
+`Tango with Django <http://www.tangowithdjango.com/book/>`_
