@@ -6,6 +6,7 @@
 
     <title>Python The Right Way</title>
 
+    <meta name="robots" content="index,follow,archive"/>
     <!-- Use the .htaccess and remove these lines to avoid edge case issues.
          More info: h5bp.com/b/378 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,6 +21,8 @@
 
     <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/normalize.css">
     <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/foundation.css">
+
+    <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/style.css">
 
     <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/vendor/custom.modernizr.js"></script>
   </head>
@@ -38,17 +41,12 @@
           <!-- Top Bar Section -->
 
           <section class="top-bar-section">
-
-            <!-- Top Bar Right Nav Elements -->
             <ul class="right">
-              <!-- Divider -->
-              <li class="divider"></li>
-              <!-- Dropdown -->
               <li class="has-dropdown">
                 <a href="#01-01-01-01-intro">آشنایی</a>
                 <ul class="dropdown">
-                  <li><a href='#01-02-01-01-who-uses-python'>در کجا استفاده شده؟</a></li>
-                  <li><a href='#02-01-01-01-why-python'>اصلا چرا پایتون؟</a></li>
+                  <li><a href='#01-02-01-01-who-uses-python'>معرفی نرم افزار ها ، سایت ها ، شرکت ها ، جاهایی که از پایتون استفاده شده</a></li>
+                  <li><a href='#01-03-01-01-where-you-can-use-python'>پایتون کجا قابل استفاده است</a></li>
                 </ul>
               </li>
               <li class="divider"></li>
@@ -59,30 +57,27 @@
                 </ul>
               </li>
               <li class="divider"></li>
-              <li class="">
-                <a href="#03-01-01-01-python-2-or-3">پایتون ۲ یا ۳؟</a>
-              </li>
+              <li class=""><a href="#03-01-01-01-python-2-or-3">پایتون ۲ یا ۳؟</a></li>
               <li class="divider"></li>
-              <li class="">
-                <a href="#04-01-01-01-which-ide">کدام IDE؟</a>
-              </li>
+              <li class=""><a href="#04-01-01-01-which-ide">کدام IDE؟</a></li>
               <li class="divider"></li>
               <li class="has-dropdown">
                 <a href="#05-01-01-01-where-to-start">از کجا شروع کنیم؟</a>
                 <ul class="dropdown">
-                  <li><a href='#05-02-01-01-books-to-read'>چه کتابهایی برای پایتون بخوانیم؟</a></li>
                   <li><a href='#05-03-01-01-python-schools'>آموزشگاه های پایتون</a></li>
-                  <li><a href='#05-04-01-01-online-education'>آموزش آنلاین</a></li>
-                  <ul class="dropdown">
-                    <li><a href='#05-04-02-01-codecademy'>Codecademy</a></li>
-                    <li><a href='#05-04-03-01-learnstreet'>LearnStreet</a></li>
-                    <li><a href='#05-04-04-01-codingbat'>CodingBat</a></li>
-                    <li><a href='#05-04-05-01-online-python-tutor'>Online Python Tutor</a></li>
-                    <li><a href='#05-04-06-01-python-monk'>PythonMonk</a></li>
-                    <li><a href='#05-04-07-01-maktabkhooneh'>Maktabkhooneh</a></li>
-                    <li><a href='#05-04-08-01-runestone'>Runestone</a></li>
-                    <li><a href='#05-04-09-01-web-amoz'>وب‌آموز</a></li>
-                  </ul>
+                  <li class="has-dropdown">
+                    <a href='#05-04-01-01-online-education'>آموزش آنلاین</a>
+                    <ul class="dropdown">
+                      <li><a href='#05-04-02-01-codecademy'>Codecademy</a></li>
+                      <li><a href='#05-04-03-01-learnstreet'>LearnStreet</a></li>
+                      <li><a href='#05-04-04-01-codingbat'>CodingBat</a></li>
+                      <li><a href='#05-04-05-01-online-python-tutor'>Online Python Tutor</a></li>
+                      <li><a href='#05-04-06-01-python-monk'>PythonMonk</a></li>
+                      <li><a href='#05-04-07-01-maktabkhooneh'>Maktabkhooneh</a></li>
+                      <li><a href='#05-04-08-01-runestone'>Runestone</a></li>
+                      <li><a href='#05-04-09-01-web-amoz'>وب‌آموز</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li class="divider"></li>
@@ -94,8 +89,16 @@
                   <li class="has-dropdown">
                     <a href='#07-02-01-01-web'>وب</a>
                     <ul class="dropdown">
-                      <li><a href='#07-02-02-01-what-is-web'>وب چیست؟</a></li>
-                      <li><a href='#07-02-03-01-framework'>فریم‌ورک</a></li>
+                      <li class="has-dropdown">
+                        <a href='#07-02-03-01-framework'>فریم‌ورک</a>
+                        <ul class="dropdown">
+                          <li><a href='#07-02-03-02-django'>جنگو</a></li>
+                          <li><a href='#07-02-03-03-flask'>فلسک</a></li>
+                          <li><a href='#07-02-03-04-web2py'>Web2Py</a></li>
+                          <li><a href='#07-02-03-05-bottle'>Bottle</a></li>
+                          <li><a href='#07-02-03-06-tornado'>Tornado</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li><a href='#07-03-01-01-desktop'>دسکتاپ</a></li>
@@ -111,7 +114,6 @@
                   <li><a href='#07-08-01-01-calculation'>محاسباتی</a></li>
                   <li><a href='#07-09-01-01-security'>امنیت</a></li>
                 </ul>
-              </li>
             </ul>
           </section>
         </nav>
@@ -121,19 +123,19 @@
   <header>
     <h2 class="entry-title">
       <a href="http://k1-hedayati.github.io/python-the-right-way/01-01-01-01-intro.html" rel="bookmark"
-         title="Permalink to مقدمه">مقدمه</a></h2>
+         title="Permalink to آشنایی">آشنایی</a></h2>
  
   </header>
   <footer class="post-info">
-    <abbr class="published" title="2013-12-04T03:22:06.747123">
-      Wed 04 December 2013
+    <abbr class="published" title="2013-12-13T13:44:16.630447">
+      Fri 13 December 2013
     </abbr>
     <address class="vcard author">
       By <a class="url fn" href="http://k1-hedayati.github.io/python-the-right-way/author/tehlug.html">TehLug</a>
     </address>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>پایتون زبان خوبی است! :دی</p>
+    <p>پایتون زبان خوبی است!</p>
 
   </div><!-- /.entry-content -->
 </section>
