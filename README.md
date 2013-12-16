@@ -16,7 +16,7 @@ How to contribute?
 How you can  help?
 ------------------
 * Add section
-* Edit and improve already written sections
+* Edit, translate or improve already written sections
 * Find bugs and report them
 * Suggest new sections or features
 * Edit this file!
