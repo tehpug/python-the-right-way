@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/normalize.css">
     <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/foundation.css">
+    <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/pygments.css">
 
     <link rel="stylesheet" href="http://k1-hedayati.github.io/python-the-right-way/theme/css/style.css">
 
@@ -28,97 +29,183 @@
   </head>
   <body>
     <div class='container'>
-      <div class='fixed'>
-        <nav class="top-bar" data-topbar>
+      <header>
+        <div class='fixed'>
+          <nav class="top-bar" data-topbar>
 
-          <ul class="title-area">
-            <li class="name"><h1><a href="#">پایتون</a></h1></li>
+            <ul class="title-area">
+              <li class="name"><h1><a href="#">پایتون</a></h1></li>
 
-            <!-- Mobile Menu Toggle -->
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-          </ul>
-
-          <!-- Top Bar Section -->
-
-          <section class="top-bar-section">
-            <ul class="right">
-              <li class="has-dropdown">
-                <a href="#01-01-01-01-intro">آشنایی</a>
-                <ul class="dropdown">
-                  <li><a href='#01-02-01-01-who-uses-python'>معرفی نرم افزار ها ، سایت ها ، شرکت ها ، جاهایی که از پایتون استفاده شده</a></li>
-                  <li><a href='#01-03-01-01-where-you-can-use-python'>پایتون کجا قابل استفاده است</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#02-01-01-01-why-python">اصلا چرا پایتون؟</a>
-                <ul class="dropdown">
-                  <li><a href='#02-02-01-01-prons-and-cons-of-python'>مزایا و معیاب فنی</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li class=""><a href="#03-01-01-01-python-2-or-3">پایتون ۲ یا ۳؟</a></li>
-              <li class="divider"></li>
-              <li class=""><a href="#04-01-01-01-which-ide">کدام IDE؟</a></li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#05-01-01-01-where-to-start">از کجا شروع کنیم؟</a>
-                <ul class="dropdown">
-                  <li><a href='#05-03-01-01-python-schools'>آموزشگاه های پایتون</a></li>
-                  <li class="has-dropdown">
-                    <a href='#05-04-01-01-online-education'>آموزش آنلاین</a>
-                    <ul class="dropdown">
-                      <li><a href='#05-04-02-01-codecademy'>Codecademy</a></li>
-                      <li><a href='#05-04-03-01-learnstreet'>LearnStreet</a></li>
-                      <li><a href='#05-04-04-01-codingbat'>CodingBat</a></li>
-                      <li><a href='#05-04-05-01-online-python-tutor'>Online Python Tutor</a></li>
-                      <li><a href='#05-04-06-01-python-monk'>PythonMonk</a></li>
-                      <li><a href='#05-04-07-01-maktabkhooneh'>Maktabkhooneh</a></li>
-                      <li><a href='#05-04-08-01-runestone'>Runestone</a></li>
-                      <li><a href='#05-04-09-01-web-amoz'>وب‌آموز</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li class=""><a href='#06-01-01-01-coding-standards'>استاندارد کدنویسی در پایتون</a></li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href='#07-01-01-01-python-and'>پایتون و ...</a>
-                <ul class="dropdown">
-                  <li class="has-dropdown">
-                    <a href='#07-02-01-01-web'>وب</a>
-                    <ul class="dropdown">
-                      <li class="has-dropdown">
-                        <a href='#07-02-03-01-framework'>فریم‌ورک</a>
-                        <ul class="dropdown">
-                          <li><a href='#07-02-03-02-django'>جنگو</a></li>
-                          <li><a href='#07-02-03-03-flask'>فلسک</a></li>
-                          <li><a href='#07-02-03-04-web2py'>Web2Py</a></li>
-                          <li><a href='#07-02-03-05-bottle'>Bottle</a></li>
-                          <li><a href='#07-02-03-06-tornado'>Tornado</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href='#07-03-01-01-desktop'>دسکتاپ</a></li>
-                  <li><a href='#07-04-01-01-embedded'>امبدد(Embedded)</a></li>
-                  <li><a href='#07-05-01-01-network'>شبکه</a></li>
-                  <li class="has-dropdown">
-                    <a href='#07-06-01-01-database'>بانک‌های اطلاعاتی</a>
-                    <ul class='dropdown'>
-                      <li><a href='#07-06-02-01-orm'>ORM</a></li>
-                    </ul>
-                  </li>
-                  <li><a href='#07-07-01-01-data-mining'>داده کاوی</a></li>
-                  <li><a href='#07-08-01-01-calculation'>محاسباتی</a></li>
-                  <li><a href='#07-09-01-01-security'>امنیت</a></li>
-                </ul>
+              <!-- Mobile Menu Toggle -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
             </ul>
-          </section>
-        </nav>
-      </div>
+
+            <!-- Top Bar Section -->
+
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#01-01-01-01-intro">آشنایی</a>
+                  <ul class="dropdown">
+                    <li><a href='#01-02-01-01-who-uses-python'>معرفی نرم افزار ها ، سایت ها ، شرکت ها ، جاهایی که از پایتون استفاده شده</a></li>
+                    <li><a href='#01-03-01-01-where-you-can-use-python'>پایتون کجا قابل استفاده است</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href="#02-01-01-01-why-python">اصلا چرا پایتون؟</a>
+                  <ul class="dropdown">
+                    <li><a href='#02-02-01-01-prons-and-cons-of-python'>مزایا و معیاب فنی</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li class=""><a href="#03-01-01-01-python-2-or-3">پایتون ۲ یا ۳؟</a></li>
+                <li class="divider"></li>
+                <li class=""><a href="#04-01-01-01-which-ide">کدام IDE؟</a></li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href="#05-01-01-01-where-to-start">از کجا شروع کنیم؟</a>
+                  <ul class="dropdown">
+                    <li><a href='#05-03-01-01-python-schools'>آموزشگاه های پایتون</a></li>
+                    <li class="has-dropdown">
+                      <a href='#05-04-01-01-online-education'>آموزش آنلاین</a>
+                      <ul class="dropdown">
+                        <li><a href='#05-04-02-01-codecademy'>Codecademy</a></li>
+                        <li><a href='#05-04-03-01-learnstreet'>LearnStreet</a></li>
+                        <li><a href='#05-04-04-01-codingbat'>CodingBat</a></li>
+                        <li><a href='#05-04-05-01-online-python-tutor'>Online Python Tutor</a></li>
+                        <li><a href='#05-04-06-01-python-monk'>PythonMonk</a></li>
+                        <li><a href='#05-04-07-01-maktabkhooneh'>Maktabkhooneh</a></li>
+                        <li><a href='#05-04-08-01-runestone'>Runestone</a></li>
+                        <li><a href='#05-04-09-01-web-amoz'>وب‌آموز</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li class=""><a href='#06-01-01-01-coding-standards'>استاندارد کدنویسی در پایتون</a></li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href='#07-01-01-01-python-and'>پایتون و ...</a>
+                  <ul class="dropdown">
+                    <li class="has-dropdown">
+                      <a href='#07-02-01-01-web'>وب</a>
+                      <ul class="dropdown">
+                        <li class="has-dropdown">
+                          <a href='#07-02-03-01-framework'>فریم‌ورک</a>
+                          <ul class="dropdown">
+                            <li><a href='#07-02-03-02-django'>جنگو</a></li>
+                            <li><a href='#07-02-03-03-flask'>فلسک</a></li>
+                            <li><a href='#07-02-03-04-web2py'>Web2Py</a></li>
+                            <li><a href='#07-02-03-05-bottle'>Bottle</a></li>
+                            <li><a href='#07-02-03-06-tornado'>Tornado</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href='#07-03-01-01-desktop'>دسکتاپ</a></li>
+                    <li><a href='#07-04-01-01-embedded'>امبدد(Embedded)</a></li>
+                    <li><a href='#07-05-01-01-network'>شبکه</a></li>
+                    <li class="has-dropdown">
+                      <a href='#07-06-01-01-database'>بانک‌های اطلاعاتی</a>
+                      <ul class='dropdown'>
+                        <li><a href='#07-06-02-01-orm'>ORM</a></li>
+                      </ul>
+                    </li>
+                    <li><a href='#07-07-01-01-data-mining'>داده کاوی</a></li>
+                    <li><a href='#07-08-01-01-calculation'>محاسباتی</a></li>
+                    <li><a href='#07-09-01-01-security'>امنیت</a></li>
+                  </ul>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </header>
       <div class='row'>
+            <article id='03-01-01-01-python-2-or-3'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/03-01-01-01-python-2-or-3.html">پایتون ۲ یا ۳</a></h1>
+                <div><p>پایتون ۳ یا ۳۰۰۰ یا py3k نسخه ای از پایتون است که تغییرات زیاد و پایه ای دارد و در کل backward compatibilly ندارد.</p>
+<p>فهرست برخی از تغییرات عمده پایتون ۳ به نقل از ویکیپدیا</p>
+<blockquote>
+تغییر پرینت چون یک تابع غیر قابل انتقال است نه یک توضیح. این باعث می‌شود که تغییر یک ماژول برای استفاده از یک تابع پرینت متفاوت، آسان باشد و بنابراین ایجاد نحو منظم تر می‌شود. در پایتون ۲٫۶ این امکان با تایپ کردن from – future – import print – function فراهم شد.
+اضافه شدن حمایت از یادآوری تابع انتخابی که می‌تواند برای معرفی تایپ خصوصی یا اهداف دیگر استفاده شود.
+یکسان کردن تایپ str/Unicode، به نمایندگی از یک متن، و معرفی یک تایپ byte تغییر ناپذیر؛ با یک تایپ مطابق با bytearray تغییر پذیر، که هر دو آرایه از بایت را ارائه می‌کنند.
+از بین بردن خصوصیات سازگاری معکوس، شامل کلاس‌های به فرم قبل، قسمت کردن اعداد صحیح، استثناءهای رشته‌ای، و گزارش‌های نسبتاً نا آشکار.</blockquote>
+<p>در سایت اصلی پایتون اینگونه نوشته شده است که اگر کارتونو توانستنید با پایتون ۳ انجام دهید. دمتون گرم. ادامه بدهید.</p>
+<p>در کل پایتون ۳ با مشکل پشتیبانی محدود کتابخانه ها مواجه است. هنوز کتابخانه‌هایی هستند که به پایتون ۳ port نشده‌اند.
+از طرفی اکثر سرور ها از سری python 2.x پشتیبانی می کنند.
+در کل پایتون ۳ زبان کاملی است و پشتیبانی خیلی بهتری از unicode دارد.
+از طرفی ابزار هایی مثل 2to3 کمک می کند کد های قدیمیتان را به پایتون ۳ تبدیل کنید (البته نه خیلی راحت)</p>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/release/3.0.1/library/2to3.html#to3-reference">2to3 - Automated Python 2 to 3 code translation</a></p>
+<p><strong>چه کتابخانه هایی هنوز به پایتون ۳ منتقل نشده اند؟</strong></p>
+<p class="text-left"><a class="reference external" href="http://code.google.com/p/gevent/">gevent - Python networking library</a></p>
+<p class="text-left"><a class="reference external" href="http://twistedmatrix.com/trac/wiki">Twisted</a></p>
+<p>البته یک سری از کتابخانه ها به صورت غیر رسمی port شده‌اند:</p>
+<p class="text-left"><a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Some unofficial binaries are available for Python 3 PIL</a></p>
+<p>کتابخانه مهمی که به پایتون ۳ منتقل شده‌اند:</p>
+<p class="text-left"><a class="reference external" href="https://docs.djangoproject.com/en/1.5/faq/install/#can-i-use-django-with-python-3">Django‎</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PySide">PySide</a></p>
+<p class="text-left"><a class="reference external" href="https://live.gnome.org/PyGObject">PyGObject</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PyQt4">PyQt4</a></p>
+<p class="text-left"><a class="reference external" href="http://www.py2exe.org/index.cgi/Tutorial#Step52">py2exe</a></p>
+<p class="text-left"><a class="reference external" href="http://www.cherrypy.org/">CherryPy — A Minimalist Python Web Framework</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pylonsproject.org/">Pylons Project</a></p>
+<p class="text-left"><a class="reference external" href="http://www.pythonware.com/products/pil/">Python Imaging Library (PIL)‎</a></p>
+<p>مقایسه در کد</p>
+<p>قدیمی:</p>
+<pre class="code python text-left highlight literal-block">
+<span class="k">print</span> <span class="s">&quot;The answer is&quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="k">print</span> <span class="n">x</span><span class="p">,</span>           <span class="c"># Trailing comma suppresses newline</span>
+<span class="k">print</span>              <span class="c"># Prints a newline</span>
+<span class="k">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;fatal error&quot;</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>       <span class="c"># prints repr((x, y))</span>
+</pre>
+<p>جدید:</p>
+<pre class="code python text-left highlight literal-block">
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;The answer is&quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&quot; &quot;</span><span class="p">)</span>  <span class="c"># Appends a space instead of a newline</span>
+<span class="k">print</span><span class="p">()</span>            <span class="c"># You must call the function!</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;fatal error&quot;</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+<span class="k">print</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>      <span class="c"># Not the same as print(x, y)!</span>
+</pre>
+<p class="text-left"><a class="reference external" href="http://docs.python.org/3.4/whatsnew/index.html">What’s New in Python</a></p>
+<p>نتیجه گیری</p>
+<p>در کل پایتون ۲ با پایتون ۳ تفاوت خیلی زیادی در کد ندارند و برنامه نویس پایتون ۲ به راحتی می تواند پایتون ۳ را یاد بگیرد. اما منابع آموزشی مربوط به پایتون ۲ بسیار زیاد تر. ابزار بیشتر و ... دارند.
+توصیه آخرم این است که تازه وارد ها با پایتون ۲ کار کنند و فقط از پایتون ۳ استفاده کنند که دقیقا می دانند می خواهند چه استفاده ای از پایتون ۳ بکنند. یعنی تمامی نیاز مندی کارشان را در نظر بگیرند.</p>
+<p>مقالات مرتبط</p>
+<p class="text-left"><a class="reference external" href="http://ondrejcertik.blogspot.com/2013/08/how-to-support-both-python-2-and-3.html">How to support both Python 2 and 3</a></p>
+<p class="text-left"><a class="reference external" href="http://pyvideo.org/video/689/how-cherrypy-supports-python-2-and-3">How CherryPy supports Python 2 and 3</a></p>
+<p class="text-left"><a class="reference external" href="http://python3porting.com/">($) Porting to Python 3 - The Book Site</a></p>
+<p class="text-left"><a class="reference external" href="http://www.b-list.org/weblog/2008/dec/05/python-3000/">Let's talk about Python 3.0</a></p>
+<p class="text-left"><a class="reference external" href="http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/">Pros and Cons about Python 3</a></p>
+<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/Python2orPython3">Python2orPython3</a></p>
+<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/442352/python-2-vs-python-3-and-tutorial">Python 2 vs Python 3 and Tutorial</a></p>
+<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/170921/should-i-learn-python-2-before-3-or-start-directly-from-python-3">Should I learn Python 2 before 3, or start directly from Python 3?</a></p>
+<p class="text-left"><a class="reference external" href="http://py.onepotcooking.com/posts/2011-01-27/differences-between-python-2-x-and-python-3-x/">Differences between Python 2.x and Python 3.x</a></p>
+</div>
+            </article>
+            <article id='02-01-01-01-why-python'>
+                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/02-01-01-01-why-python.html">اصلا چرا پایتون؟</a></h1>
+                <div><p>به عقیده ی نویسنده ی یکی از کتاب های پایتون, برنامه نویس کسی است که از برنامه نویسی لذت می برد و با استفاده از هر ابزاری این کار را انجام می دهد. در نتیجه کاری را انجام دهید که از آن لذت می برید.</p>
+<p>زبان پایتون یک زبان آزاد و متن باز است؛ پس برای استفاده ی بدون محدودیت به راحتی در دسترس است.</p>
+<p>اگر می خواهید یک جستجوی ساده انجام دهید و یا با تعداد زیادی فایل مثل عکس های یادگاریتان کار کنید؛ نیاز به یک دیتابیس ساده و رابط کاربری آسان دارید می توانید از پایتون به عنوان زبان اسکریپت نویسی استفاده کنید. این امکان حتی برای انجام کارهای SysAdmin هم می تواند بسیار مفید باشد.</p>
+<p>اگر یک برنامه نویس حرفه ای هستید و از زبانها و ماژولهای مختلفی برای انجام کارهایتان استفاده می کنید. می توانید از این زبان بر طیف گسترده ای از سیستمها استفاده کنید و حتی می توانید از پایتون به صورت یک زبان (به صورت embedded ) در برنامه خود استفاده کنید و جهت توسعه آنرا بکار ببندید.</p>
+<p>پایتون زبانی است که از تعداد زیادی ساختار, پشتیبانی می کند. شما می توانید به راحتی از ابزارهای مختلف آن سود ببرید. حتی در صورتی که هنوز از C استفاده می کنید و یا می خواهید قدرت آن را هم, در دستان خود داشته باشید! می توانید قسمتهایی از برنامه را به کمک زبان C بنویسید و از آنها در برنامه خود استفاده کنید. بعضی از ساختارهای زبان پایتون باعث شده است که, بعضی آن را بهتر از Perl بدانند و در حل مشکلات بزرگ از آن استفاده کنند.</p>
+<p>پایتون امکان تقسیم بندی برنامه به ماژول های مختلف را دارد. شما می توانید از این ماژول ها مثل کار با فایلها ، ورودی و خروجی ها، سوکت ها و رابطهای متفاوت ( حتی گرافیکی) در برنامه های دیگر خود به راحتی استفاده کنید.</p>
+<p>پایتون یک زبان تفسیری است این موضوع به شما این امکان را می دهد تا برنامه خود را در سیستمهای دیگر تنها با وجود یک مفسر پایتون اجرا کنید (همین قابلیت است که توانایی اجرای برنامه را در طیف وسیعی از سیستمها برای شما فراهم می دهد.) در صورتی که در بسیاری از زبانها نتنها مجبورید به صورت خاص برنامه نویسی کنید بلکه باید آن برنامه را به صورت مجزا بر روی سیستم جدید کامپایل کنید.</p>
+<p>Readability یا خوانا بودن. نوع مفسری که پایتون دارد برنامه نویس را مجبور می کند که بصورتی کد نویسی کند که در پایان خواندن برنامه بسیار آسان باشد. در صورتی که در خیلی از زبانهای دیگر شما به راحتی می توانید چندین خط را در یک خط ادغام کرده و یا همه خطهای برنامه را در یک ستون بنویسید! ( این امر خواندن برنامه را بسیار سخت می کند)</p>
+<p><a class="reference external" href="http://www.educator.ir/post-528.jsp">چرا پایتون؟</a></p>
+<p class="text-left"><a class="reference external" href="http://www.python.org/about/success/esr/">Python Success Stories</a></p>
+<p class="text-left"><a class="reference external" href="http://www.slideshare.net/arnav/python-presentation">Why Python - Slideshare</a></p>
+<p class="text-left"><a class="reference external" href="http://pythoncard.sourceforge.net/what_is_python.html">What is Python and Why Python</a></p>
+<p class="text-left"><a class="reference external" href="http://blog.meetthegimp.org/why-python/">Why Python? | Meet the GIMP!</a></p>
+<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/5427/why-such-popularity-with-python">Why such popularity with Python?</a></p>
+<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/27207/why-was-pythons-popularity-so-sudden?rq=1">Why was Python's popularity so sudden?</a></p>
+<p class="text-left"><a class="reference external" href="http://www.codercaste.com/2009/10/20/5-reasons-why-you-should-learn-python-programming/">5 Reasons Why You Should Learn Python Programming</a></p>
+<p class="text-left"><a class="reference external" href="http://www.programmingforbiologists.org/why-python">Why Python? | Programming For Biologists</a></p>
+<p class="text-left"><a class="reference external" href="http://www.activestate.com/blog/2013/03/why-did-it-have-be-python">Python. Why Did it Have to be Python?</a></p>
+</div>
+            </article>
             <article id='01-01-01-01-intro'>
                     <h1><a href="http://k1-hedayati.github.io/python-the-right-way/01-01-01-01-intro.html">آشنایی</a></h1>
                 <div><p>پایتون زبان خوبی است!</p>
@@ -161,28 +248,6 @@
 <p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_Python_software">List of Python software</a></p>
 </div>
             </article>
-            <article id='02-01-01-01-why-python'>
-                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/02-01-01-01-why-python.html">اصلا چرا پایتون؟</a></h1>
-                <div><p>به عقیده یکی از نویسندگان کتاب پایتون برنامه نویس کسی است که از برنامه نویسی لذت می برد و با استفاده از هر ابزاری این کار را انجام می دهد. پس کاری را انجام دهید که از آن لذت می برید.</p>
-<p>زبان پایتون یک زبان آزاد و متن باز استبد. پس به راحتی برای شما در دسترس بوده و می توانید بدون محدودیت از آن استفاده کنید.</p>
-<p>اگر می خواهید یک جستجوی ساده انجام دهید و یا با تعداد زیادی فایل مثل عکس های یادگاری کار کنید نیاز به یک دیتابیس بسیار ساده و رابط کاربری آسان دارید می توانید از این زبان به عنوان اسکریپت نویسی استفاده کنید. این امکان حتی به شما در انجام کارهای SysAdmin هم می تواند بسیار مفید واقع شود.</p>
-<p>اگر یک برنامه نویس حرفه ای  هستید و از زبانها و ماژولهای مختلفی برای انجام کار استفاده می کنید. می توانید از این زبان که قابلیت اجرا در تعداد وسیعی از سیستمها را دارد استفاده کنید و حتی می توانید از پایتون به صورت یک زبان بصورت embedded در برنامه خود استفاده کنید و جهت توسعه آنرا بکار ببندید.</p>
-<p>پایتون زبانی است که تعداد زیادی ساختار را پشتیبانی کرده و می توانید به راحتی از ابزارهای مختلف آن سود ببرید. حتی در صورتی که هنوز از C استفاده می کنید و یا می خواهید قدرت آن را هم در دستان خود داشته باشید می توانید قسمتهایی از برنامه را به کمک زبان C بنویسید و از آنها در برنامه خود استفاده کنید. بعضی از ساختارهای زبان پایتون باعث شده است که بعضی آن را بهتر از Perl بدانند و در حل مشکلات بزرگتر از آن استفاده کنند.</p>
-<p>پایتون امکان تقسیم بندی برنامه به ماژول های مختلف را برای شما به وجود می آورد و می توانید از این ماژول ها مثل کار با فایلها ، ورودی و خروجی ها، سوکت ها، و رابطهای متفاوت و حتی گرافیکی  در برنامه های دیگر خود به راحتی استفاده کنید.</p>
-<p>پایتون یک زبان تفسیری است این موضوع این امکان را به شما می دهد تا برنامه خود را در سیستمهای دیگر تنها با وجود یک مفسر پایتون اجرا کنید و این مورد قبلیت اجرای برنامه شما در طیف وسیعی از سیستمها فراهم می کند. در صورتی که در بسیاری از زبانها مجبورید نتنها به صورت خاص برنامه نویسی کنید بلکه آن برنامه را به صورت مجزا بر روی سیستم جدید باید کامپایل کنید.</p>
-<p>readability یا خوانا بودن. نوع مفسری که پایتون دارد برنامه نویس را مجبور می کند که بصورتی کد نویسی کند که در پایان خواندن برنامه را بسیار آسان می کند. در صورتی که در خیلی از زبانهای دیگر شما به راحتی می توانید چندید خط را در یک خط ادغام کرده و یا همه خطهای برنامه را در یک ستون بنویسید! که این امر خواندن برنامه را بسیار سخت می کند.</p>
-<p><a class="reference external" href="http://www.educator.ir/post-528.jsp">چرا پایتون؟</a></p>
-<p class="text-left"><a class="reference external" href="http://www.python.org/about/success/esr/">Python Success Stories</a></p>
-<p class="text-left"><a class="reference external" href="http://www.slideshare.net/arnav/python-presentation">Why Python - Slideshare</a></p>
-<p class="text-left"><a class="reference external" href="http://pythoncard.sourceforge.net/what_is_python.html">What is Python and Why Python</a></p>
-<p class="text-left"><a class="reference external" href="http://blog.meetthegimp.org/why-python/">Why Python? | Meet the GIMP!</a></p>
-<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/5427/why-such-popularity-with-python">Why such popularity with Python?</a></p>
-<p class="text-left"><a class="reference external" href="http://programmers.stackexchange.com/questions/27207/why-was-pythons-popularity-so-sudden?rq=1">Why was Python's popularity so sudden?</a></p>
-<p class="text-left"><a class="reference external" href="http://www.codercaste.com/2009/10/20/5-reasons-why-you-should-learn-python-programming/">5 Reasons Why You Should Learn Python Programming</a></p>
-<p class="text-left"><a class="reference external" href="http://www.programmingforbiologists.org/why-python">Why Python? | Programming For Biologists</a></p>
-<p class="text-left"><a class="reference external" href="http://www.activestate.com/blog/2013/03/why-did-it-have-be-python">Python. Why Did it Have to be Python?</a></p>
-</div>
-            </article>
             <article id='02-02-01-01-prons-and-cons-of-python'>
                     <h2><a href="http://k1-hedayati.github.io/python-the-right-way/02-02-01-01-prons-and-cons-of-python.html">مزایا و معیاب فنی</a></h2>
                 <div><ul class="simple">
@@ -193,68 +258,6 @@
 </ul>
 <p class="text-left"><a class="reference external" href="http://www.stat.washington.edu/~hoytak/blog/whypython.html">10 Reasons Python Rocks for Research (And a Few Reasons it Doesn’t)</a></p>
 <p class="text-left"><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_programming_languages">Comparison of programming languages</a></p>
-</div>
-            </article>
-            <article id='03-01-01-01-python-2-or-3'>
-                    <h1><a href="http://k1-hedayati.github.io/python-the-right-way/03-01-01-01-python-2-or-3.html">پایتون ۲ یا ۳</a></h1>
-                <div><p>پایتون ۳ یا ۳۰۰۰ یا py3k نسخه ای از پایتون است که تغییرات زیاد و پایه ای دارد و در کل backward compatibilly ندارد.</p>
-<p>فهرست برخی از تغییرات عمده پایتون ۳ به نقل از ویکیپدیا</p>
-<blockquote>
-تغییر پرینت چون یک تابع غیر قابل انتقال است نه یک توضیح. این باعث می‌شود که تغییر یک ماژول برای استفاده از یک تابع پرینت متفاوت، آسان باشد و بنابراین ایجاد نحو منظم تر می‌شود. در پایتون ۲٫۶ این امکان با تایپ کردن from – future – import print – function فراهم شد.
-اضافه شدن حمایت از یادآوری تابع انتخابی که می‌تواند برای معرفی تایپ خصوصی یا اهداف دیگر استفاده شود.
-یکسان کردن تایپ str/Unicode، به نمایندگی از یک متن، و معرفی یک تایپ byte تغییر ناپذیر؛ با یک تایپ مطابق با bytearray تغییر پذیر، که هر دو آرایه از بایت را ارائه می‌کنند.
-از بین بردن خصوصیات سازگاری معکوس، شامل کلاس‌های به فرم قبل، قسمت کردن اعداد صحیح، استثناءهای رشته‌ای، و گزارش‌های نسبتاً نا آشکار.</blockquote>
-<p>در سایت اصلی پایتون اینگونه نوشته شده است که اگر کارتونو توانستنید با پایتون ۳ انجام دهید. دمتون گرم. ادامه بدهید.</p>
-<p>در کل پایتون ۳ با مشکل پشتیبانی محدود کتابخانه ها مواجه است. هنوز کتابخانه‌هایی هستند که به پایتون ۳ port نشده‌اند.
-از طرفی اکثر سرور ها از سری python 2.x پشتیبانی می کنند.
-در کل پایتون ۳ زبان کاملی است و پشتیبانی خیلی بهتری از unicode دارد.
-از طرفی ابزار هایی مثل 2to3 کمک می کند کد های قدیمیتان را به پایتون ۳ تبدیل کنید (البته نه خیلی راحت)</p>
-<p class="text-left"><a class="reference external" href="http://docs.python.org/release/3.0.1/library/2to3.html#to3-reference">2to3 - Automated Python 2 to 3 code translation</a></p>
-<p><strong>چه کتابخانه هایی هنوز به پایتون ۳ منتقل نشده اند؟</strong></p>
-<p class="text-left"><a class="reference external" href="http://code.google.com/p/gevent/">gevent - Python networking library</a></p>
-<p class="text-left"><a class="reference external" href="http://twistedmatrix.com/trac/wiki">Twisted</a></p>
-<p>البته یک سری از کتابخانه ها به صورت غیر رسمی port شده‌اند:</p>
-<p class="text-left"><a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Some unofficial binaries are available for Python 3 PIL</a></p>
-<p>کتابخانه مهمی که به پایتون ۳ منتقل شده‌اند:</p>
-<p class="text-left"><a class="reference external" href="https://docs.djangoproject.com/en/1.5/faq/install/#can-i-use-django-with-python-3">Django‎</a></p>
-<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PySide">PySide</a></p>
-<p class="text-left"><a class="reference external" href="https://live.gnome.org/PyGObject">PyGObject</a></p>
-<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/PyQt4">PyQt4</a></p>
-<p class="text-left"><a class="reference external" href="http://www.py2exe.org/index.cgi/Tutorial#Step52">py2exe</a></p>
-<p class="text-left"><a class="reference external" href="http://www.cherrypy.org/">CherryPy — A Minimalist Python Web Framework</a></p>
-<p class="text-left"><a class="reference external" href="http://www.pylonsproject.org/">Pylons Project</a></p>
-<p class="text-left"><a class="reference external" href="http://www.pythonware.com/products/pil/">Python Imaging Library (PIL)‎</a></p>
-<p>مقایسه در کد</p>
-<p>قدیمی:</p>
-<pre class="text-left literal-block">
-print &quot;The answer is&quot;, 2*2
-print x,           # Trailing comma suppresses newline
-print              # Prints a newline
-print &gt;&gt;sys.stderr, &quot;fatal error&quot;
-print (x, y)       # prints repr((x, y))
-</pre>
-<p>جدید:</p>
-<pre class="text-left literal-block">
-print(&quot;The answer is&quot;, 2*2)
-print(x, end=&quot; &quot;)  # Appends a space instead of a newline
-print()            # You must call the function!
-print(&quot;fatal error&quot;, file=sys.stderr)
-print((x, y))      # Not the same as print(x, y)!
-</pre>
-<p class="text-left"><a class="reference external" href="http://docs.python.org/3.4/whatsnew/index.html">What’s New in Python</a></p>
-<p>نتیجه گیری</p>
-<p>در کل پایتون ۲ با پایتون ۳ تفاوت خیلی زیادی در کد ندارند و برنامه نویس پایتون ۲ به راحتی می تواند پایتون ۳ را یاد بگیرد. اما منابع آموزشی مربوط به پایتون ۲ بسیار زیاد تر. ابزار بیشتر و ... دارند.
-توصیه آخرم این است که تازه وارد ها با پایتون ۲ کار کنند و فقط از پایتون ۳ استفاده کنند که دقیقا می دانند می خواهند چه استفاده ای از پایتون ۳ بکنند. یعنی تمامی نیاز مندی کارشان را در نظر بگیرند.</p>
-<p>مقالات مرتبط</p>
-<p class="text-left"><a class="reference external" href="http://ondrejcertik.blogspot.com/2013/08/how-to-support-both-python-2-and-3.html">How to support both Python 2 and 3</a></p>
-<p class="text-left"><a class="reference external" href="http://pyvideo.org/video/689/how-cherrypy-supports-python-2-and-3">How CherryPy supports Python 2 and 3</a></p>
-<p class="text-left"><a class="reference external" href="http://python3porting.com/">($) Porting to Python 3 - The Book Site</a></p>
-<p class="text-left"><a class="reference external" href="http://www.b-list.org/weblog/2008/dec/05/python-3000/">Let's talk about Python 3.0</a></p>
-<p class="text-left"><a class="reference external" href="http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/">Pros and Cons about Python 3</a></p>
-<p class="text-left"><a class="reference external" href="http://wiki.python.org/moin/Python2orPython3">Python2orPython3</a></p>
-<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/442352/python-2-vs-python-3-and-tutorial">Python 2 vs Python 3 and Tutorial</a></p>
-<p class="text-left"><a class="reference external" href="http://stackoverflow.com/questions/170921/should-i-learn-python-2-before-3-or-start-directly-from-python-3">Should I learn Python 2 before 3, or start directly from Python 3?</a></p>
-<p class="text-left"><a class="reference external" href="http://py.onepotcooking.com/posts/2011-01-27/differences-between-python-2-x-and-python-3-x/">Differences between Python 2.x and Python 3.x</a></p>
 </div>
             </article>
             <article id='04-01-01-01-which-ide'>
@@ -624,6 +627,9 @@ Forensics
 </div>
             </article>
       </div>
+      <footer>
+        <!-- Add some stuff here -->
+      </footer>
     </div>
     <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/vendor/jquery.js"></script>
     <script src="http://k1-hedayati.github.io/python-the-right-way/theme/js/foundation.min.js"></script>

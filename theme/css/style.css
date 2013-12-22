@@ -23,7 +23,6 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-body { margin: 0 }
 a:focus { outline: thin dotted }
 a:active,
 a:hover { outline: 0 }
@@ -237,8 +236,8 @@ ol.linenums {
 }
 
 body{
-   font-family:Mitra,Nassim,"Baskerville",Georgia,Times,serif !important;
-   font-size:20px;
+   font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
+   font-size: 100%;
    line-height:1.618;
    -webkit-font-smoothing:antialiased;
    background-color: #eee;
@@ -249,7 +248,7 @@ a {
     -webkit-transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
     transition: color 0.5s ease;
-    color: #77a;
+    color: #559;
     text-decoration: none;
 }
 a:hover { color: #222; }
@@ -268,3 +267,11 @@ h4 {
 }
 ::selection { background-color: #dedede }
 ::-moz-selection { background-color: #dedede }
+
+p {
+   margin-bottom: 0.5rem;
+}
+
+.text-left {
+   direction: ltr;
+}
