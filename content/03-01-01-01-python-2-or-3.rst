@@ -78,23 +78,23 @@
 
 قدیمی:
 
-.. class:: text-left
+.. class:: text-left highlight
 
-::
+.. code:: python
 
-  print "The answer is", 2*2
+  print "The answer is", 2 * 2
   print x,           # Trailing comma suppresses newline
   print              # Prints a newline
-  print >>sys.stderr, "fatal error"
+  print >> sys.stderr, "fatal error"
   print (x, y)       # prints repr((x, y))
 
 جدید:
 
-.. class:: text-left
+.. class:: text-left highlight
 
-::
+.. code:: python
 
-  print("The answer is", 2*2)
+  print("The answer is", 2 * 2)
   print(x, end=" ")  # Appends a space instead of a newline
   print()            # You must call the function!
   print("fatal error", file=sys.stderr)

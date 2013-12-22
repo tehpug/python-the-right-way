@@ -28,16 +28,16 @@ meta.foundation-mq-xxlarge {
 
 html,
 body {
-  /*font-size: 100%;*/ }
+  font-size: 100%; }
 
 body {
   background: white;
   color: #222222;
   padding: 0;
   margin: 0;
-  //font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  //font-weight: normal;
-  //font-style: normal;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1;
   position: relative;
   cursor: default; }
@@ -1576,8 +1576,8 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-right: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 0.8125rem;
+    font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
+    /* font-size: 0.8125rem; */
     font-weight: normal;
     background: #333333; }
     .top-bar-section ul li > a.button {
@@ -1894,7 +1894,7 @@ meta.foundation-mq-topbar {
 
 button, .button {
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2282,7 +2282,7 @@ a.th {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2290,7 +2290,7 @@ a.th {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -2614,7 +2614,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -2624,7 +2624,7 @@ ul.pagination {
     .side-nav li.active > a:first-child {
       color: #4d4d4d;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -2681,7 +2681,7 @@ a {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
@@ -2692,7 +2692,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
   font-weight: 300;
   font-style: normal;
   color: #222222;
@@ -2746,7 +2746,7 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
   font-weight: bold;
   color: #7f0a0c; }
 
@@ -3381,7 +3381,7 @@ blockquote p {
     display: inline;
     margin-right: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -3565,7 +3565,7 @@ blockquote p {
       right: auto; } }
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4634,7 +4634,7 @@ kbd {
   border-style: solid;
   border-width: 1px;
   margin: 0;
-  font-family: "Consolas", "Menlo", "Courier", monospace;
+  font-family: Mitra,Nassim,"Baskerville",Georgia,Times,serif;
   font-size: 0.875rem;
   padding: 0.125rem 0.25rem 0;
   -webkit-border-radius: 3px;
