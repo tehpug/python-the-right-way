@@ -114,7 +114,12 @@
                     </li>
                     <li><a href='#07-07-01-01-data-mining'>داده کاوی</a></li>
                     <li><a href='#07-08-01-01-calculation'>محاسباتی</a></li>
-                    <li><a href='#07-09-01-01-security'>امنیت</a></li>
+                    <li class="has-dropdown">
+                      <a href='#07-09-01-01-security'>امنیت</a>
+                      <ul class='dropdown'>
+                        <li><a href='#07-09-02-01-cryptography'>رمزنگاری</a></li>
+                      </ul>
+                    </li>
                   </ul>
               </ul>
             </section>
@@ -129,13 +134,25 @@
             </article>
             <article id='01-02-01-01-who-uses-python'>
                     <h2><a href="http://k1-hedayati.github.io/python-the-right-way/01-02-01-01-who-uses-python.html">معرفی نرم افزار ها ، سایت ها ، شرکت ها ، جاهایی که از پایتون استفاده شده</a></h2>
-                <div><p>بر اساس اطلاعات به دست آمده از <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)#Use">ویکیپیدا</a> و <a class="reference external" href="http://www.python.org/about/quotes">سایت اصلی پایتون</a> از این زبان در شرکت‌های زیر استفاده شده:</p>
-<ul class="simple">
-<li>Google</li>
-<li>Yahoo</li>
-<li>CERN</li>
-<li>NASA</li>
-</ul>
+                <div><p>بر اساس اطلاعات به دست آمده از <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)#Use">ویکی پدیا</a> و <a class="reference external" href="http://www.python.org/about/quotes">سایت اصلی پایتون</a> از این زبان در شرکت های زیر استفاده شده:
+- Google
+- Yahoo
+- CERN
+- NASA</p>
+<p>نرم افزار های نوشته شده با پایتون:</p>
+<p>‌BitTorrent - نرم افزاری برای جستجوی فایل های به اشتراک گذاری شده</p>
+<p>Blender - یک نرم افزار 3 بعدی و متن باز معروف</p>
+<p>Chandler - مدیر اطلاعات شخصی شامل تقویم, ایمیل , کارهای روزانه, یادداشت ها و غیره</p>
+<p>Civilization TV - یک گیم کامپیوتری که از boost.python  استفاده می کند</p>
+<p>Mailman - یک نرم افزار مرتبط با ایمیل</p>
+<p>Kombilo - مدیر پایگاه داده و مرورگر گیم های go</p>
+<p>MoinMoin</p>
+<p>Plone - یک ابزار مدیریتی ومتن باز</p>
+<p>Portage - قلب توزیع جنتو. یک مدیر بسط های سیستم عامل لینوکس</p>
+<p>Zope - یک پلاتفورم شی گرای مبتنی بر وب . زوپ شامل یک سرور نرم افزار به همراه پایگاه داده شی گرا و یک رابط
+مدیریتی درونی مبتنی بر وب می باشد</p>
+<p>SPE - یک IDE رایگان و متن باز برای سیستم عامل های ویندوز , لینوکس و مک که از wxGlade , PyChecker , Blender3D پشتیبانی میکند.</p>
+<p>جهت اطلاع بیشتر از نرم افزارهای نوشته شده با پایتون به <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Free_software_programmed_in_Python">Free software programmed in Python</a> مراجعه کنید.</p>
 </div>
             </article>
             <article id='01-03-01-01-where-you-can-use-python'>
@@ -390,12 +407,14 @@
             </article>
             <article id='05-04-05-01-online-python-tutor'>
                     <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-05-01-online-python-tutor.html">Online Python Tutor</a></h3>
-                <div><p class="text-left"><a class="reference external" href="http://www.pythontutor.com/visualize.html">Online Python Tutor</a> is a free educational tool that helps students overcome a fundamental barrier to learning programming: understanding what happens as the computer executes each line of a program's source code. Using this tool, a teacher or student can write a Python program directly in the web browser and visualize what the computer is doing step-by-step as it executes the program.</p>
+                <div><p><a class="reference external" href="http://www.pythontutor.com/visualize.html">Online Python Tutor</a> یک ابزار آموزشی رایگان است که به دانش آموزان کمک می کند تا از موانع اساسی برنامه نویسی عبور کنند: اجرای هر خط از کد منبع برنامه و درک آنچه در کامپیوتر رخ میدهد
+با استفاده از این ابزار، یک معلم یا دانش آموز می تواند یک برنامه پایتون رَِاِ, به طور مستقیم در مرورگر وب ارسال کند
+و تجسم اجرای گام به گام آن, به عنوان برنامه را در کامپیوتر ببیند</p>
 </div>
             </article>
             <article id='05-04-06-01-python-monk'>
                     <h3><a href="http://k1-hedayati.github.io/python-the-right-way/05-04-06-01-python-monk.html">PythonMonk</a></h3>
-                <div><p class="text-left">In a world where teaching and learning is no longer a one-off transaction, <a class="reference external" href="http://pythonmonk.com/">CodeMonk</a> aims to fill the gap by helping programmers learn and level up continuously.</p>
+                <div><p>در جهانی که آموزش و یادگیری دیگر یک معامله شده است، <a class="reference external" href="http://pythonmonk.com/">CodeMonk</a> با هدف پر کردن شکاف, به برنامه نویسان برای یادگیری و ارتقاع سطح مداوم کمک می‌کند.</p>
 </div>
             </article>
             <article id='05-04-07-01-maktabkhooneh'>
@@ -624,6 +643,16 @@ Fuzzing
 کتاب خانه های وب
 Forensics
 آنالیز بد افزار ها</p>
+</div>
+            </article>
+            <article id='07-09-02-01-cryptography'>
+                    <h3><a href="http://k1-hedayati.github.io/python-the-right-way/07-09-02-01-cryptography.html">رمزنگاری</a></h3>
+                <div><p class="text-left">The Python Cryptography Toolkit is a collection of extension modules for Python. One part of the Toolkit is a number of different algorithms. The list includes most of the common ones:</p>
+<p class="text-left">Encryption algorithms: Alleged RC4, Blowfish, DES, Diamond, IDEA, LOKI91, RC5, REDOC III, Sapphire.
+Hash algorithms: MD2, MD4, MD5, Secure Hash Algorithm
+Public key algorithms: ElGamal, RSA</p>
+<p class="text-left"><a class="reference external" href="http://www.python.org/workshops/1995-05/pct.html">Cryptography and Python</a></p>
+<p><a class="reference external" href="http://ictc.aeoi.org.ir/content/2197">آموزش پایتون با رویکرد رمزنگاری</a></p>
 </div>
             </article>
       </div>
