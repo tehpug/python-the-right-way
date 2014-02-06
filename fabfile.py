@@ -9,6 +9,7 @@ DEPLOY_PATH = env.deploy_path
 # Remote server configuration
 production = 'root@localhost:22'
 dest_path = '/var/www'
+port = '8000'
 
 # Rackspace Cloud Files configuration settings
 env.cloudfiles_username = 'my_rackspace_username'
@@ -19,7 +20,7 @@ env.cloudfiles_container = 'my_cloudfiles_container'
 def clean():
     if os.path.isdir(DEPLOY_PATH):
         local('rm -rf {deploy_path}'.format(**env))
-        local('mkdir {deploy_path}'.format(**env))
+        local('mkdir -p {deploy_path}'.format(**env))
 
 def build():
     local('pelican -s pelicanconf.py')
@@ -32,7 +33,7 @@ def regenerate():
     local('pelican -r -s pelicanconf.py')
 
 def serve():
-    local('cd {deploy_path} && python -m SimpleHTTPServer'.format(**env))
+    local('cd {deploy_path} && python -m SimpleHTTPServer {port}'.format(**env))
 
 def reserve():
     build()

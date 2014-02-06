@@ -36,11 +36,11 @@ function shut_down(){
   if [[ $? -eq 0 ]]; then
     if alive $PID; then
       echo "Killing pelican.server"
-      kill $PID
+      kill -9 $PID
     else
       echo "Stale PID, deleting"
     fi
-    rm $SRV_PID
+    rm -f $SRV_PID
   else
     echo "pelican.server PIDFile not found"
   fi
@@ -49,11 +49,11 @@ function shut_down(){
   if [[ $? -eq 0 ]]; then
     if alive $PID; then
       echo "Killing Pelican"
-      kill $PID
+      kill -9 $PID
     else
       echo "Stale PID, deleting"
     fi
-    rm $PELICAN_PID
+    rm -f $PELICAN_PID
   else
     echo "Pelican PIDFile not found"
   fi
@@ -67,7 +67,7 @@ function start_up(){
   pelican_pid=$!
   echo $pelican_pid > $PELICAN_PID
   cd $OUTPUTDIR
-  $PY -m pelican.server $port &
+  $PY -m pelican.server $port nohup &
   srv_pid=$!
   echo $srv_pid > $SRV_PID
   cd $BASEDIR
