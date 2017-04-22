@@ -45,7 +45,7 @@ __ http://docs.python-requests.org/
 
 `Python Network Programming <http://www.tutorialspoint.com/python/python_networking.htm>`_
 
-در ضمن کتاب `Foundations of Python Network Programming <http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037/>`_ به صورت مفصل تر به این موضوع پرداخته است، در این کتاب به پکیج‌های مفیدی معرفی شده که بعضی از آنها عبارتند از:
+در ضمن کتاب `Foundations of Python Network Programming <http://www.amazon.com/Foundations-Python-Network-Programming-comprehensive/dp/1430230037/>`_ به صورت مفصل تر به این موضوع پرداخته است، در این کتاب به پکیج‌های مفیدی اشاره شده که بعضی از آنها عبارتند از:
 
 برای کار با نقشه‌های گوگل می توانید از بسته `googlemaps <https://pypi.python.org/pypi/googlemaps>`_ استفاده کنید.
 
@@ -63,7 +63,7 @@ __ http://docs.python-requests.org/
 
 برای برنامه نویسی behaviour-driven در پاتون بسته `lancelot <https://pypi.python.org/pypi/lancelot>`_ این امکان را فراهم می کند.
 
-`Twisted <https://twistedmatrix.com/trac/>`_ یک فریم‌ورک event-driven برای کار با شبکه است که از پروتکل های مختلف پشتیبانی می کند، برای اطاعات بیشتر در مورد Twisted به صفحه `ویکی‌پیدا <https://en.wikipedia.org/wiki/Twisted_(software)>`_ ‌ پروژه مراجعه کنید.
+`Twisted <https://twistedmatrix.com/trac/>`_ یک فریم‌ورک event-driven برای کار با شبکه است که از پروتکل های مختلف پشتیبانی می کند، برای اطلاعات بیشتر در مورد Twisted به صفحه `ویکی‌پیدا <https://en.wikipedia.org/wiki/Twisted_(software)>`_ ‌ پروژه مراجعه کنید.
 
 فریم‌ورک `SocketServer <http://docs.python.org/2/library/socketserver.html#module-SocketServer>`_ برنامه نویسی سرور‌های شبکه را آسان می کند.
 
